@@ -1,5 +1,6 @@
 module.exports = {
   title: 'Fractal',
+  description: 'Powerful component libraries & styleguides that fit the way you work.',
   themeConfig: {
     docsDir: 'docs',
     lastUpdated: 'Last Updated', // string | boolean
