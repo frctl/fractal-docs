@@ -14,15 +14,13 @@ By convention, project configuration and setup information should be kept in fil
 
 If you are using the Fractal ~@TODOLINK CLI tool~ this file will need to exist (and be set up correctly) before you can run commands on your project.
 
-### A note on paths
-
+::: tip A note on paths
 When setting paths to directories in your Fractal configuration, it's possible to specify them relative to the root of your project directory - i.e. `src/components`. However it's recommended that you instead make use of Node's [`\__dirname`](https://nodejs.org/docs/latest/api/globals.html#globals_dirname) global to generate full absolute paths that look like:
 
-```js
-const myPath = __dirname + '/src/components';
-```
+`const myPath = __dirname + '/src/components';`
 
 This will make your Fractal installation more portable (and more robust for any later integrations). All examples in this documentation will use this style.
+:::
 
 ### Creating and exporting a new Fractal instance
 
