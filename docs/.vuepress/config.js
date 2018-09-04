@@ -1,6 +1,7 @@
 module.exports = {
   title: 'Fractal',
   themeConfig: {
+    docsDir: 'docs',
     lastUpdated: 'Last Updated', // string | boolean
     repo: 'samuelgoddard/fractal-docs',
     repoLabel: 'Github',
