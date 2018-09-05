@@ -4,11 +4,11 @@ title: Overview
 
 # Documentation Pages
 
-Fractal makes it easy to create documentation for your project. Documentation pages are written in [Github-flavoured Markdown](https://guides.github.com/features/mastering-markdown/) and support the use of YAML 'front-matter' for configuration, as well as configuration via standard ~@TODOLINK @configuration-files', 'configuration files') }}.
+Fractal makes it easy to create documentation for your project. Documentation pages are written in [Github-flavoured Markdown](https://guides.github.com/features/mastering-markdown/) and support the use of YAML 'front-matter' for configuration, as well as configuration via standard [configuration files](../core-concepts/configuration-files.html).
 
-Additionally, if you need to generate more complex documentation, you can use a ~@TODOLINK @views', 'template language') }} of your choosing (as for ~@TODOLINK @components', 'components') }}, the default is Handlebars) to help dynamically generate pages.
+Additionally, if you need to generate more complex documentation, you can use a [template language](../core-concepts/view-templates.html) of your choosing (as for [components](../components/), the default is Handlebars) to help dynamically generate pages.
 
-Pages can be organised into as many folders and sub-folders as is necessary for your project, but must all reside in the documentation folder that you have configured in your ~@TODOLINK @project-settings', 'project settings') }}.
+Pages can be organised into as many folders and sub-folders as is necessary for your project, but must all reside in the documentation folder that you have configured in your [project settings](../project-settings.html).
 
 ## A simple page
 
@@ -44,15 +44,15 @@ title: Change Log
 This is the body of the page
 ```
 
-In this case we are specifying that we want the title of the page (used in the web UI and other places) to be 'Change Log'. To see a full list of available configuration items, check out the ~@TODOLINK @docs-config', 'documentation configuration reference') }}.
+In this case we are specifying that we want the title of the page (used in the web UI and other places) to be 'Change Log'. To see a full list of available configuration items, check out the [documentation configuration reference](../documentation/configuration-reference.html).
 
-If you don't want to use YAML front matter, you can also use a ~@TODOLINK @configuration-files', 'separate configuration file') }} in the same way as you would for a component.
+If you don't want to use YAML front matter, you can also use a [separate configuration file](../core-concepts/configuration-files.html) in the same way as you would for a component.
 
 ## Using data in page templates
 
-Because pages are rendered using Handlebars (or another ~@TODOLINK @template-engines', 'template engine') }} of your choosing) before being run through the Markdown processor, you can easily dynamically generate sections of pages.
+Because pages are rendered using Handlebars (or another [template engine](../customisation/template-engines.html) of your choosing) before being run through the Markdown processor, you can easily dynamically generate sections of pages.
 
-As for components, any ~@TODOLINK @context-data', 'context data') }} that you wish to have access to in the page must be specified under the `context` property. You can then use Handlebars to generate content based on that data.
+As for components, any [context data](../core-concepts/context-data.html) that you wish to have access to in the page must be specified under the `context` property. You can then use Handlebars to generate content based on that data.
 
 For instance, if you are using YAML front matter, you could re-create the example at the start of this page as follows:
 

@@ -6,15 +6,15 @@ title: Configuration reference
 
 There are a number of global configuration options you can set to determine how Fractal handles documentation pages.
 
-Additionally, documentation pages and ~@TODOLINK @collections', 'collections') }} can have their own (optional) configuration files associated with them; or if you prefer pages can specify their configuration in a ~@TODOLINK @docs#yaml-front-matter', 'YAML front-matter section') }} within the page template itself. See the ~@TODOLINK @docs#yaml-front-matter', 'documentation overview') }} for more information.
+Additionally, documentation pages and [collections](../collections/) can have their own (optional) configuration files associated with them; or if you prefer pages can specify their configuration in a [YAML front-matter section](../documentation/#yaml-front-matter) within the page template itself. See the [documentation overview](../documentation/) for more information.
 
 ## Global configuration options
 
-These options can be set on your Fractal instance using the ~@TODOLINK @api-docs#set', '`fractal.docs.set()`') }} method. See the ~@TODOLINK @project-settings', 'project settings') }} documentation for more details.
+These options can be set on your Fractal instance using the [`fractal.docs.set()`](../../api/endpoints/fractal-docs.html#set-path-value) method. See the [project settings](../project-settings.html) documentation for more details.
 
 ### default.context
 
-Global ~@TODOLINK @context-data', 'context data') }} that will be made available to all pages.
+Global [context data](../core-concepts/context-data.html) that will be made available to all pages.
 
 ```js
 fractal.docs.set('default.context', {
@@ -24,7 +24,7 @@ fractal.docs.set('default.context', {
 
 ### default.prefix
 
-Global prefix to apply to all generated ~@TODOLINK @naming#referencing-other-items', 'handles') }} unless overridden in a collection or page configuration file.
+Global prefix to apply to all generated [handles](../core-concepts/naming.html#referencing-other-items) unless overridden in a collection or page configuration file.
 
 ```js
 fractal.docs.set('default.prefix', 'foobar'); // default is null
@@ -40,7 +40,7 @@ fractal.docs.set('default.status', 'wip'); // default is null
 
 ### ext
 
-The file extension that will be used for all documentation ~@TODOLINK @views', 'view templates') }}. Note that this must include the leading `.`
+The file extension that will be used for all documentation [view templates](../core-concepts/view-templates.html). Note that this must include the leading `.`
 
 ```js
 fractal.docs.set('ext', '.html'); // default is '.md'
@@ -104,7 +104,7 @@ fractal.docs.set('path', __dirname + '/src/docs');
 
 ### statuses
 
-The set of available statuses that can be assigned to pages. See the ~@TODOLINK @statuses', 'statuses documentation') }} for details of the default values and how to override them as required.
+The set of available statuses that can be assigned to pages. See the [statuses documentation](../core-concepts/statuses.html) for details of the default values and how to override them as required.
 
 ```js
 fractal.docs.set('statuses', {
@@ -137,7 +137,7 @@ These are properties that can be specified in an individual page's YAML front ma
 
 Data to pass to the page when rendering it.
 
-`context` is an **inheritable property**. Any context data set on the page will be *merged* with any context data set upstream in the ~@TODOLINK @configuration-files#configuration-inheritance', 'configuration cascade') }}.
+`context` is an **inheritable property**. Any context data set on the page will be *merged* with any context data set upstream in the [configuration cascade](../core-concepts/configuration-files.html#configuration-inheritance).
 
 ```yaml
 context:
@@ -186,7 +186,7 @@ title: 'Amazing Mega Buttons'
 
 ## Collection properties
 
-Collections can specify properties that should be applied to all child pages of that collection via ~@TODOLINK @configuration-files#configuration-inheritance', 'configuration inheritance') }}. See the ~@TODOLINK @collections', 'documentation on collections') }} for more details on how to work with collections, and for details on available non-inheritable properties like `label` and `title`.
+Collections can specify properties that should be applied to all child pages of that collection via [configuration inheritance](../core-concepts/configuration-files.html#configuration-inheritance). See the [collections](../collections/) for more details on how to work with collections, and for details on available non-inheritable properties like `label` and `title`.
 
 The following properties can be set on page collections and will affect the pages within them:
 
@@ -201,7 +201,7 @@ context:
 
 ### prefix
 
-A string to be prefixed on to the generated ~@TODOLINK @naming', 'handles') }} of all pages in that collection.
+A string to be prefixed on to the generated [handles](../core-concepts/naming.html#referencing-other-items) of all pages in that collection.
 
 ```yaml
 prefix: 'api'

@@ -4,13 +4,13 @@ title: Dynamic Documentation
 
 # Dynamic docs
 
-Because documentation pages are ~@TODOLINK @views', 'views') }} that are run through a template engine, it is possible to dynamically embed information about your components into your documentation.
+Because documentation pages are [views](../core-concepts/view-templates.html) that are run through a template engine, it is possible to dynamically embed information about your components into your documentation.
 
 This means that you can have documentation describing your components that stays up-to-date when aspects of your components change.
 
 ## Using bundled helpers
 
-You can use the ~@TODOLINK @views#handlebars-helpers', 'Handlebars helpers') }} that ship with Fractal to embed the view template or context data for a component into your documentation. For example, if you were documenting a `button` component, you might have documentation that looks like this:
+You can use the [Handlebars helpers](../core-concepts/view-templates.html#handlebars-helpers) that ship with Fractal to embed the view template or context data for a component into your documentation. For example, if you were documenting a `button` component, you might have documentation that looks like this:
 
 ````markdown
 ## Button component
@@ -42,9 +42,9 @@ Later on, if the `button` component template or context data is updated, then th
 
 ## Using the API
 
-It's possible to take this one step further using ~@TODOLINK @api', 'Fractal\'s API') }} in combination with creating your own helpers.
+It's possible to take this one step further using [Fractal\'s API](../../api/) in combination with creating your own helpers.
 
-When you set up your project, you can ~@TODOLINK @views#customising-handlebars', 'customise the Handlebars engine') }} to add in your own helpers. These helpers can use Fractal API methods to provide you access to whatever data you need about your component library.
+When you set up your project, you can [customise the Handlebars engine](../core-concepts/view-templates.html#customising-handlebars) to add in your own helpers. These helpers can use Fractal API methods to provide you access to whatever data you need about your component library.
 
 For instance, if you wanted to create a Handlebars [block helper](http://handlebarsjs.com/block_helpers.html) that iterated over all of the available components in your project to create a list, you could use something like the following:
 
@@ -86,4 +86,4 @@ Which would output something like the following (depending on your components, o
 </ul>
 ```
 
-See the ~@TODOLINK @api', 'API documentation') }} for details on how to access data about your component library programatically.
+See the [API documentation](../../api/) for details on how to access data about your component library programatically.
