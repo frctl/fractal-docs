@@ -11,10 +11,10 @@ The Fractal CLI tool is an optional, globally-installed NPM package that provide
 The Fractal CLI tool can be installed globally via NPM:
 
 ```bash
-npm i -g @frctl/fractal{{ _config.project.tag }}
+npm i -g @frctl/fractal
 ```
 
-To use the CLI tool with your Fractal project, you must first make sure you have a  ~@TODOLINK @project-settings', 'project settings file') }} (typically called `fractal.js`) in the root of your project directory. This file should export a configured Fractal instance. For example:
+To use the CLI tool with your Fractal project, you must first make sure you have a  [project settings file](../project-settings.html) (typically called `fractal.js`) in the root of your project directory. This file should export a configured Fractal instance. For example:
 
 ```javascript
 // fractal.js
@@ -47,7 +47,7 @@ fractal start --sync
 When running commands in this format, the command will run and then immediately exit (unless it is watching or running a server in the background).
 
 ::: tip
-Fractal also provides a more immersive ~@TODOLINK @interactive', 'interactive mode') }} that makes running multiple commands easier and faster.
+Fractal also provides a more immersive [interactive mode](./interactive-mode.html) that makes running multiple commands easier and faster.
 :::
 
 ## Command types
@@ -60,9 +60,9 @@ Global commands can be run from anywhere *outside of a project folder*. An examp
 
 ### Project commands
 
-Project-level commands must be run from within the root directory of your project, and require the presence of a ~@TODOLINK @project-settings', 'project settings file') }} in the root of the project directory.
+Project-level commands must be run from within the root directory of your project, and require the presence of a [project settings file](../project-settings.html) in the root of the project directory.
 
-An example of a project-level command would be the `fractal start` command that starts up the ~@TODOLINK @server', 'dev server') }} for the web UI.
+An example of a project-level command would be the `fractal start` command that starts up the [project settings file](../web/development-server.html) for the web UI.
 
 <!--
 * Need to restart CLI on changes to project config file.

@@ -6,11 +6,11 @@ label: Custom commands
 
 It is possible to extend the Fractal CLI tool using custom commands. These allow you to hook into the power of Fractal's API to build bespoke commands to help you with your project workflow.
 
-Custom commands are typically registered in your ~@TODOLINK @project-settings', 'project settings file') }} using the ~@TODOLINK @api-cli#command', '`fractal.cli.command()`') }} method. Once registered they can then be called via the command line or programmatically.
+Custom commands are typically registered in your [project settings file](../project-settings.html) using the [`fractal.cli.command()`](../../api/endpoints/fractal-cli.html#command-commandstring-callback-opts) method. Once registered they can then be called via the command line or programmatically.
 
 ## An example custom command
 
-An simple custom command to list all the components in the project, together with their status, is shown below. This would typically be registered in your ~@TODOLINK @project-settings', 'project settings file') }}.
+An simple custom command to list all the components in the project, together with their status, is shown below. This would typically be registered in your [project settings file](../project-settings.html).
 
 ```js
 // fractal.js
@@ -36,7 +36,7 @@ Once created, the command can be run from within the project directory using the
 fractal list-components
 ```
 
-It can also be called programmatically using the ~@TODOLINK @api-cli#exec', '`fractal.cli.exec()`') }} method:
+It can also be called programmatically using the [`fractal.cli.exec()`](../../api/endpoints/fractal-cli.html#exec) method:
 
 ```js
 fractal.cli.exec('list-components');

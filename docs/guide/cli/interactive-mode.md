@@ -18,7 +18,7 @@ You can now enter commands to interact with your fractal project.
 
 ## Running commands
 
-Commands in interactive mode are identical to the ~@TODOLINK @commands', 'standard-format commands') }}, except that you no longer need to prefix them with `fractal`.
+Commands in interactive mode are identical to the [standard-format commands](./commands-reference.html), except that you no longer need to prefix them with `fractal`.
 
 For example, to start the dev server when in interactive mode, just use the `start` command. Flags can be used as per usual:
 

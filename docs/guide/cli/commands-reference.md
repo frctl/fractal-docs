@@ -10,7 +10,7 @@ The default installation of the Fractal CLI tool provides a number of project-le
 
 ### start
 
-Start a web UI local development server. See the ~@TODOLINK @server', 'dev server documentation') }} for more details and options.
+Start a web UI local development server. See the [dev server documentation](../web/development-server.html) for more details and options.
 
 ```bash
 fractal start
@@ -20,12 +20,12 @@ Available options:
 
 * `-p, --port <port-number>` - the port number to use, for example `5000`.
 * `-t, --theme <theme-name>` - the custom theme to use.
-* `-s, --sync` - whether to use the integrate ~@TODOLINK @server#browsersync-integration', 'BrowserSync') }} instance to provide auto-refresh and syncing capabilities
+* `-s, --sync` - whether to use the integrate [BrowserSync](../web/development-server.html#browsersync-integration) instance to provide auto-refresh and syncing capabilities
 * `-w, --watch` - whether to watch components and documentation pages for changes
 
 ### build
 
-Export a static HTML version of the web UI into a directory in the root of your project. See the ~@TODOLINK @builder', 'HTML export docs') }} for more details and options.
+Export a static HTML version of the web UI into a directory in the root of your project. See the [HTML export docs](../web/exporting-static-html.html) for more details and options.
 
 ```bash
 fractal build
@@ -45,7 +45,7 @@ fractal help
 
 ## Global commands
 
-The default installation of Fractal CLI tool provides one **global** command. Note that global commands *cannot* be run when in ~@TODOLINK @interactive', 'interactive mode') }} or within an existing Fractal project.
+The default installation of Fractal CLI tool provides one **global** command. Note that global commands *cannot* be run when in [interactive mode](./interactive-mode.html) or within an existing Fractal project.
 
 ### new
 
