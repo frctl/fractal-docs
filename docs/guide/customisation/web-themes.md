@@ -6,7 +6,7 @@ title: Web UI themes
 
 Themes are used to power the Fractal web UI. They are responsible not only for the visual look and feel of the UI, but also for what URLs are exposed and even what functionality is provided.
 
- The default theme, ~@TODOLINK @default-theme', 'Mandelbrot') }}, showcases much of Fractal's functionality, and offers a range of customisation options to allow it to be tailored to the needs of individual projects.
+ The default theme, [Mandelbrot](../web/default-theme.html), showcases much of Fractal's functionality, and offers a range of customisation options to allow it to be tailored to the needs of individual projects.
 
 ## Configuring themes
 
@@ -25,7 +25,7 @@ const myCustomisedTheme = mandelbrot({
 fractal.web.theme(myCustomisedTheme);
 ```
 
-See the Mandelbrot ~@TODOLINK @default-theme#configuration', 'configuration docs') }} for full details on available options, or the appropriate theme documentation/README for other themes.
+See the Mandelbrot [configuration docs](../web/default-theme.html#customisation) for full details on available options, or the appropriate theme documentation/README for other themes.
 
 ::: warning
 You will need to `npm install` any theme that you want to customise before you can `require()` it in your project settings file.
@@ -140,7 +140,7 @@ If you have not published the theme as a module but instead as a (for example) G
 npm install git+ssh://git@github.com/<repo-owner>/<repo>.git
 ```
 
-Then in the ~@TODOLINK @project-settings', 'setup file') }} for each of your projects you can `require` and use your subclassed theme:
+Then in the [setup file](../project-settings.html) for each of your projects you can `require` and use your subclassed theme:
 
 ```js
 // fractal.js

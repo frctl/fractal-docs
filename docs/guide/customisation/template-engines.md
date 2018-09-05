@@ -4,14 +4,14 @@ title: Template engines
 
 # Template engines
 
-By default, Fractal uses **Handlebars** to render ~@TODOLINK @views', 'view templates') }} for both components and documentation pages.
+By default, Fractal uses **Handlebars** to render [view templates](../core-concepts/view-templates.html) for both components and documentation pages.
 It's bundled with a number of built-in Fractal helpers, but you can also customise it to include your own custom helpers and/or partials if required.
 
 However, it's easy to use an alternate template engine (via the use of _adapters_) if you need a more bespoke solution for your project.
 
 ## Customising Handlebars
 
-See the ~@TODOLINK @views#using-handlebars', 'view templates documentation') }} for details on how to customise the default Handlebars install to include your own helpers or partials.
+See the [view templates documentation](../core-concepts/view-templates.html#using-handlebars) for details on how to customise the default Handlebars install to include your own helpers or partials.
 
 
 ## Loading template engines
