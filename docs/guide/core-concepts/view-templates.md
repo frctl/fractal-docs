@@ -4,17 +4,17 @@ title: View templates
 
 # View Templates 
 
-~@TODOLINK Components~ and ~@TODOLINK documentation pages~ both make use of **view templates**.
+[Components](../components/) and [documentation pages](../documentation/) both make use of **view templates**.
 
 For components, the view template is the file that the component's markup lives in. For pages, it's the file that contains the content of the page.
 
 View templates are, at their core, just specially named files that are rendered using a template engine. Documentation pages are then additionally (optionally) passed through a Markdown parser to generate the final output.
 
-Using ~@TODOLINK configuration file~, you can pass ~@TODOLINK context data~ into your view templates to avoid having to hard code values in them and so allow them to be re-useable in many places - including ~@TODOLINK directly in your application~ if desired!
+Using [configuration file](./configuration-files.html), you can pass [context data](./context-data.html) into your view templates to avoid having to hard code values in them and so allow them to be re-useable in many places - including [directly in your application](../integration/integrating-into-production.html) if desired!
 
 ## Template rendering
 
-By default, Fractal uses [Handlebars](http://handlebarsjs.com) to render view templates for both components and documentation pages. However you are ~@TODOLINK free to use a different template engine~ like Nunjucks (or even React!) if it suits the needs of your project better.
+By default, Fractal uses [Handlebars](http://handlebarsjs.com) to render view templates for both components and documentation pages. However you are [free to use a different template engine](../customisation/template-engines.html) like Nunjucks (or even React!) if it suits the needs of your project better.
 
 You can also use one template engine for your components and another different engine for your documentation pages, should you so wish.
 
@@ -56,7 +56,7 @@ It's worth familiarising yourself with Handlebars using its [documentation](http
 
 On top of the standard set of [Handlebars helpers](http://handlebarsjs.com#helpers), Fractal makes a small set of additional helpers available to your component templates and documentation pages.
 
-Using these helpers is not required in any way, although they are often helpful. If you need to integrate your templates directly into your production site or application build you _may_ find that using them ties your templates too tightly into Fractal, in which case you might be better off ~@TODOLINK disabling them~ or ~@TODOLINK adding your own~.
+Using these helpers is not required in any way, although they are often helpful. If you need to integrate your templates directly into your production site or application build you _may_ find that using them ties your templates too tightly into Fractal, in which case you might be better off [disabling them](../customisation/template-engines.html) or [adding them](../customisation/template-engines.html).
 
 The available helpers are:
 
@@ -88,7 +88,7 @@ You can also pass in a *partial* data object (i.e. containing only some of the p
 
 Takes a root-relative path and re-writes it if required to make it work in static HTML exports.
 
-**It is strongly recommended to use this helper whenever you need to link to any ~@TODOLINK static assets~ from your templates.**
+**It is strongly recommended to use this helper whenever you need to link to any [static assets](../web/#static-assets) from your templates.**
 
 ```handlebars
 {{path '/css/my-stylesheet.css'}}
@@ -158,7 +158,7 @@ Contains a simple data object representation of the item (i.e. component or page
 
 #### `_target`
 
-This variable is only set in ~@TODOLINK component preview layouts, and contains a simple data object representation of the item (i.e. component or page) being rendered _within_ the preview layout.
+This variable is only set in [component preview layouts](../components/preview-layouts.html), and contains a simple data object representation of the item (i.e. component or page) being rendered _within_ the preview layout.
 
 ```handlebars
 {{ _target.title }} <!-- outputs 'Button' -->
@@ -221,7 +221,7 @@ A set of [Handlebars partials](http://handlebarsjs.com/#partials) to make availa
 
 #### pristine
 
-Defaults to `false`. Set to `true` if you **do not wish** to automatically load any of the ~@TODOLINK bundled helpers~ into your Handlebars instance.
+Defaults to `false`. Set to `true` if you **do not wish** to automatically load any of the [bundled helpers](./view-templates.html/#using-handlebars) into your Handlebars instance.
 
 ```js
 {

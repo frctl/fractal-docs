@@ -12,7 +12,7 @@ One of the main _disadvantages_ of flat-file systems is that when one item refer
 
 ## Generated names & handles
 
-Unless told otherwise, Fractal will infer the **name** of a component or documentation page from its ~@TODOLINK @views', 'view template') }} **file name** (or the parent directory for ~@TODOLINK @components#compound-components', "'compound' components") }}).
+Unless told otherwise, Fractal will infer the **name** of a component or documentation page from its [view template ](./view-templates.html) **file name** (or the parent directory for ['compound' components](../components/#compound-components)).
 
 It will then use this name (plus some other information) to generate a **handle** for the item. Handles are what will be used to reference that item elsewhere around your project.
 
@@ -20,7 +20,7 @@ It will then use this name (plus some other information) to generate a **handle*
 **Names** and **handles** are both 'slug' type strings, and will contain only lowercase, alphanumeric characters plus underscores and dashes.
 :::
 
-The name will also be used to generate a default **label** and a **title** for the item. Labels are the text that will be used when the item is referenced in any navigation (for example in the ~@TODOLINK @web', 'web UI') }}) and the title value is the text that will be used anywhere else a human-readable name for the item is required.
+The name will also be used to generate a default **label** and a **title** for the item. Labels are the text that will be used when the item is referenced in any navigation (for example in the [web UI](../web/)) and the title value is the text that will be used anywhere else a human-readable name for the item is required.
 
 Let's look at a simple example of how this works in practice, assuming that we have a component with a view template called `blockquote-large.hbs`:
 
@@ -80,7 +80,7 @@ Any hidden components or variants can still be referenced by other components, i
 
 ## Prefixes
 
-If you have your components or docs organised into sub-folder ~@TODOLINK @views', 'collections') }} then you can include a collection ~@TODOLINK @configuration-files', 'configuration file') }} to specify properties that will apply to all the items within that collection.
+If you have your components or docs organised into sub-folder [collections](../collections/) then you can include a collection [configuration file](./configuration-files.html) to specify properties that will apply to all the items within that collection.
 
 One of the available properties you can set on a collection is the `prefix` property. When you set a value for this property in a parent collection, all children of this collection will have handle's generated that take the format `[prefix]-[item-name]`, making them much more likely to be unique across your whole component library.
 
@@ -109,7 +109,7 @@ The handles generated for the two components in the `special` collection would b
 
 You can also specify custom **names** and **handles** in an item's own configuration file to override the ones that would be auto-generated from the file name by Fractal.
 
-See the configuration reference documentation for ~@TODOLINK @components-config', 'components') }} and ~@TODOLINK @docs-config', 'documentation pages') }} for full details of how to set custom names, handles, labels and titles.
+See the configuration reference documentation for [components](../components/configuration-reference.html) and [documentation pages](../documentation/configuration-reference.html) for full details of how to set custom names, handles, labels and titles.
 
 There are a few things to note when specifying bespoke names or handles for items:
 
@@ -122,9 +122,9 @@ You can use an item's handle to reference it throughout your project, using the 
 
 This syntax can be used in a number of places, including:
 
-* ~@TODOLINK @context-data#static-data-references', 'Static data references') }} in context data
-* Including ~@TODOLINK @sub-components', 'sub-component view templates') }} within parent templates
-* Specifying ~@TODOLINK @preview-layouts', 'preview layouts') }} in configuration data
+* [Static data references](./context-data.html#static-data-references) in context data
+* Including [sub-component view templates](../components/including-sub-components.html) within parent templates
+* Specifying [preview layouts](../components/preview-layouts.html) in configuration data
 
 So for this example structure and data:
 
@@ -163,7 +163,7 @@ special/alert.hbs`   --> @sparkly-alert
 special/button.hbs`  --> @sparkly-button
 ```
 
-For example in a component view template, to include another component as a ~@TODOLINK @sub-components', 'sub-component') }}:
+For example in a component view template, to include another component as a [sub-component](../components/including-sub-components.html):
 
 ```handlebars
 <!-- components/banner.hbs -->

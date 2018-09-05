@@ -4,9 +4,9 @@ title: Statuses
 
 # Statuses
 
-~@TODOLINK @components', 'Components') }} and ~@TODOLINK @docs', 'documentation pages') }} can have statuses associated with them.
+[Components](../components/) and [documentation pages](../documentation/) can have statuses associated with them.
 
-Each status has a colour and a label that can be displayed in the ~@TODOLINK @web', 'web UI') }} (and other places) to help people quickly understand the status of each component.
+Each status has a colour and a label that can be displayed in the [web UI](../web/) (and other places) to help people quickly understand the status of each component.
 
 Fractal defines some default statuses, but you are free to define your own to suit the needs of your project, or customise the colours and labels associated with these statuses.
 
@@ -33,7 +33,7 @@ By default the available options are `ready` and `draft`.
 
 ## Setting the status of an item
 
-You can specify a status for an item in its ~@TODOLINK @configuration-files', 'configuration file') }} (or in the YAML front-matter for documentation pages). For example:
+You can specify a status for an item in its [configuration file](./configuration-files.md) (or in the YAML front-matter for documentation pages). For example:
 
 ```js
 // component.config.json
@@ -42,7 +42,7 @@ You can specify a status for an item in its ~@TODOLINK @configuration-files', 'c
 }
 ```
 
-A status can also be defined for a ~@TODOLINK @collections', 'collection' ) }}; in this case the status will automatically be applied to all children unless specifically overridden on a case-by-case basis.
+A status can also be defined for a [collection](../collections/); in this case the status will automatically be applied to all children unless specifically overridden on a case-by-case basis.
 
 
 ## Custom statuses

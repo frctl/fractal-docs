@@ -15,9 +15,9 @@ In order to be recognised, configuration files must:
 
 The available configuration options depend on the type of the item being configured. See the relevant configuration reference for details:
 
-* ~@TODOLINK @components-config', 'Components') }}
-* ~@TODOLINK @docs-config', 'Pages') }}
-* ~@TODOLINK @collections-config', 'Collection') }}
+* [Components](../components/configuration-reference.html)
+* [Pages](../documentation/configuration-reference.html)
+* [Collection](../collections/configuration-reference.html)
 
 ## Configuration file formats
 
@@ -29,7 +29,7 @@ The latter is recommended as it offers a lot more flexibility, but you may want 
 
 Configuration files authored in this format must have a filename that looks like `item-name.config.js`.
 
-Using the JavaScript (CommonJS) module format for your configuration files is a little more involved than using JSON or YAML, but is a **lot more powerful** as it allows you to do things like dynamically generating component ~@TODOLINK @context-data', 'context data') }}
+Using the JavaScript (CommonJS) module format for your configuration files is a little more involved than using JSON or YAML, but is a **lot more powerful** as it allows you to do things like dynamically generating component [context data](./context-data.html)
 
 The file itself should be in the format of a Node CommonJS-style module that exports a configuration object. If you don't know what that is, don't worry! Just make sure its contents look like this:
 
@@ -58,7 +58,7 @@ As this is JavaScript and not JSON, the exported object doesn't need to conform 
 
 Because it is just a JavaScript file, you can do things like use JavaScript to generate your context data for you, should you need to. Additionally, because it is imported as a NodeJS module, you can also `require` any third party NPM modules (or even your own module files) to help with any data-generation - including doing things like fetching data form external APIs.
 
-See the ~@TODOLINK @context-data', 'context data documentation') }} for more details on ways to make use of this powerful feature.
+See the [context data documentation](./context-data.html) for more details on ways to make use of this powerful feature.
 
 ### JSON format
 

@@ -4,9 +4,9 @@ title: Context Data
 
 # Context Data 
 
-Context data is data that is made available to your ~@TODOLINK @configuration-files', 'view templates') }} when they are rendered.
+Context data is data that is made available to your [view templates](./configuration-files.html) when they are rendered.
 
-It is typically defined within a ~@TODOLINK @configuration-files', 'configuration file') }}, although documentation pages can opt to define it in in a ~@TODOLINK @docs#yaml-front-matter', 'YAML front-matter section') }} instead if desired.
+It is typically defined within a [configuration file](./configuration-files.html), although documentation pages can opt to define it in in a [YAML front-matter section](../documentation/#yaml-front-matter) instead if desired.
 
 Context data can consist of simple data types such strings, booleans, numbers, arrays and objects. It can also contain Promises (which will be resolved before context data is made available for use) and special 'static data references' that allow referencing of context data from other components or documentation pages.
 
@@ -23,7 +23,7 @@ To define context data for a component or documentation page you should to set a
 }
 ```
 
-Any data set within this context object will then be made available to that item's ~@TODOLINK @views', 'view template') }} as variables. For example:
+Any data set within this context object will then be made available to that item's [view template](./view-templates.html) as variables. For example:
 
 ```js
 // users.config.json
@@ -60,7 +60,7 @@ Any data set within this context object will then be made available to that item
 
 Context data object also support the use of _data references_. These are special references, resolved at runtime, that allow you to 'point' to other item's context data.
 
-This is made possible using the `@handle` ~@TODOLINK @naming#referencing-other-items', 'reference syntax') }} in your context data definitions. For example, if we create a configuration file for a component called `list-items` that looks like this:
+This is made possible using the `@handle` [reference syntax](./naming.html#referencing-other-items) in your context data definitions. For example, if we create a configuration file for a component called `list-items` that looks like this:
 
 ```yaml
 context:
@@ -104,13 +104,13 @@ context:
     - four
 ```
 
-<div class="Note Note--callout">
+::: tip
 The reference syntax only applies to items of **the same type** - a component cannot access a documentation page's context data (or vice versa).
-</div>
+:::
 
  ## Dynamic data
 
- Fractal provides the option ~@TODOLINK @configuration-files#javascript-module-format', 'to use CommonJS-style modules') }} to define configuration data for components and documentation pages. Whilst slightly more complex than using JSON or YAML as a data format, it has the advantage of letting you be able to use the full power of JavaScript to generate context data for your components.
+ Fractal provides the option [to use CommonJS-style modules](./configuration-files.html#javascript-module-format) to define configuration data for components and documentation pages. Whilst slightly more complex than using JSON or YAML as a data format, it has the advantage of letting you be able to use the full power of JavaScript to generate context data for your components.
 
  This can be handy if you want to provide data to your components from an API, or to use a library such as [Faker](https://github.com/marak/Faker.js) to generate placeholder data for your components.
 
