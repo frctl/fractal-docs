@@ -2,7 +2,7 @@
 title: Configuration reference
 ---
 
-# Configuration components
+# Configuring components
 
 There are a number of global configuration options you can set to determine how Fractal handles components.
 
