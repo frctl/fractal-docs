@@ -121,8 +121,7 @@ Note that using the `--sync` option here instructs Fractal to use BrowserSync to
 
 Once it has booted up you should see something like this in your terminal window:
 
-~@TODOIMAGE~ 
-image('sync-server-started.png')
+<img :src="$withBase('/sync-server-started.png')" alt="Sync Server Screenshot">
 
 If so, visit the 'Local URL' (It should be something like http://localhost:3000) and have a look at your component library's web UI.
 
