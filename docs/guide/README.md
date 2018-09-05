@@ -4,7 +4,7 @@ title: Overview
 
 # Fractal User Guide
 
-#### Fractal is a tool to help you **build** and **document** web component libraries, and then **integrate** them into your projects.
+Fractal is a tool to help you **build** and **document** web component libraries, and then **integrate** them into your projects.
 
 Component (or pattern) libraries are a way of designing and building websites in a modular fashion, breaking up the UI into small, reusable chunks that can then later be assembled in a variety of ways to build anything from larger components right up to whole pages.
 

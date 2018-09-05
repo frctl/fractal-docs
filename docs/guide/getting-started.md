@@ -6,7 +6,7 @@ title: Getting Started
 
 This guide outlines two ways of creating a new Fractal project. The end result is similar but the first one uses the Fractal CLI `new` command to generate the project structure for you, whilst the second goes through in a little more detail some of the steps involved.
 
-Both assume you have installed the Fractal CLI tool globally as described in the ~@TODOLINK linkinstallation guide~.
+Both assume you have installed the Fractal CLI tool globally as described in the [installation guide](./installation.md).
 
 ## The TL;DR method
 
@@ -21,7 +21,7 @@ Both assume you have installed the Fractal CLI tool globally as described in the
 
 The following steps will describe how to create a basic Fractal project from scratch.
 
-It assumes that you have already created a new, empty directory for your project and have installed Fractal as a dependency in your project (as well as the global CLI tool). If not then first check out the ~@TODOLINK installation guide~ for instructions.
+It assumes that you have already created a new, empty directory for your project and have installed Fractal as a dependency in your project (as well as the global CLI tool). If not then first check out the [installation guide](./installation.md) for instructions.
 
 ### 1. Set up your project structure
 
@@ -90,7 +90,7 @@ Components can be very simple, consisting of just a single view template file, o
 1. Create a view file within there called `<component-name>.hbs` (The `.hbs` extension is the extension for Handlebars templates, the view template engine that Fractal uses by default);
 1. Add a configuration file that contains some context data that we want to use to render the view template with. -->
 
-Obviously this isn't a very exciting component at this point, but there is ~@TODOLINK plenty more you can do~ once you've got to grips with the basics.
+Obviously this isn't a very exciting component at this point, but there is [plenty more you can do](./components) once you've got to grips with the basics.
 
 ### 4. Add a documentation index page
 
@@ -103,7 +103,7 @@ title: FooCorp Components
 This is the component library for FooCorp. **Feel free to look around!**
 ```
 
-The Markdown file also contains some YAML front-matter to specify a title for the page - check out the ~@TODOLINK documentation pages section~ for more details on this and all the other things that you can do with Fractal's powerful documentation engine.
+The Markdown file also contains some YAML front-matter to specify a title for the page - check out the [documentation pages section](./docs) for more details on this and all the other things that you can do with Fractal's powerful documentation engine.
 
 ### 5. Start the development server
 
@@ -123,6 +123,6 @@ Once it has booted up you should see something like this in your terminal window
 
 <img :src="$withBase('/sync-server-started.png')" alt="Sync Server Screenshot">
 
-If so, visit the 'Local URL' (It should be something like http://localhost:3000) and have a look at your component library's web UI.
+If so, visit the 'Local URL' (It should be something like [http://localhost:3000](http://localhost:3000)) and have a look at your component library's web UI.
 
-The ~@TODOLINK web UI docs~ has full details on the options available when starting up development servers, as well as information on how to run static HTML exports of your component library UI and more.
+The [web UI docs](./web) has full details on the options available when starting up development servers, as well as information on how to run static HTML exports of your component library UI and more.

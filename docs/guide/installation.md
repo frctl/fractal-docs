@@ -20,7 +20,7 @@ npm install --save @frctl/fractal
 
 ## Installing the Fractal CLI tool
 
-Fractal provides a globally-installable CLI tool to make running tasks such as starting the development web server quick and easy. This tool is completely optional - there are plenty of other options (including direct integration with [Gulp, NPM scripts or other build tool](./installation.md) if you don't want to use it.
+Fractal provides a globally-installable CLI tool to make running tasks such as starting the development web server quick and easy. This tool is completely optional - there are plenty of other options (including direct integration with [Gulp, NPM scripts or other build tool](./integration/build-tools.md) if you don't want to use it.
 
 To install the Fractal CLI tool, run the following command from your terminal:
 
@@ -28,4 +28,4 @@ To install the Fractal CLI tool, run the following command from your terminal:
 npm i -g @frctl/fractal
 ```
 
-You can then run tasks using the `fractal <task-name>` format from your terminal - see the [CLI tool documentation](./cli.md) for full details.
+You can then run tasks using the `fractal <task-name>` format from your terminal - see the [CLI tool documentation](./cli) for full details.

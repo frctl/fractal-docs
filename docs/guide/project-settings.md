@@ -12,7 +12,7 @@ Fractal comes with a few sensible defaults, but before you can get your project 
 
 By convention, project configuration and setup information should be kept in file called `fractal.js` that lives in the **root of your project directory**.
 
-If you are using the Fractal ~@TODOLINK CLI tool~ this file will need to exist (and be set up correctly) before you can run commands on your project.
+If you are using the Fractal [CLI tool](./cli) this file will need to exist (and be set up correctly) before you can run commands on your project.
 
 ::: tip A note on paths
 When setting paths to directories in your Fractal configuration, it's possible to specify them relative to the root of your project directory - i.e. `src/components`. However it's recommended that you instead make use of Node's [`\__dirname`](https://nodejs.org/docs/latest/api/globals.html#globals_dirname) global to generate full absolute paths that look like:
@@ -33,7 +33,7 @@ const fractal = module.exports = require('@frctl/fractal').create();
 
 ### Project-related metadata
 
-Most projects will want to customise the project title from the default. This can be done using the  ~@TODOLINK `fractal.set()`~ method as follows:
+Most projects will want to customise the project title from the default. This can be done using the [`fractal.set()`](../api/endpoints/fractal.html#set-path-value) method as follows:
 
 ```js
 fractal.set('project.title', 'FooCorp Component Library');
@@ -50,46 +50,46 @@ Apart from the `project.title` value, Fractal will not use any of these other va
 
 ### Configuring components
 
-Component configuration is done using the  ~@TODOLINK `fractal.components.set()` method.
+Component configuration is done using the [`fractal.components.set()`](../api/endpoints/fractal-components.html#set-path-value) method.
 
-To specify the directory that your  ~@TODOLINK components~ will be created in, you can use the `path` setting:
+To specify the directory that your [components](./components) will be created in, you can use the `path` setting:
 
 ```js
 fractal.components.set('path', __dirname + '/src/components');
 ```
 
-The  ~@TODOLINK components configuration reference~ contains details of all the other  options that you may want to tweak for the components in your project.
+The [components configuration reference](./components/configuration-reference.md) contains details of all the other  options that you may want to tweak for the components in your project.
 
 
 ### Configuring documentation pages
 
-Docs configuration is done using the  ~@TODOLINK `fractal.docs.set()`~ method.
+Docs configuration is done using the [`fractal.docs.set()`](../api/endpoints/fractal-docs.html#set-path-value) method.
 
-To specify the directory that your  ~@TODOLINK documentation pages~ will reside in, you can use the `path` setting:
+To specify the directory that your [documentation pages](./documentation) will reside in, you can use the `path` setting:
 
 ```js
 fractal.docs.set('path', __dirname + '/src/docs');
 ```
 
-The  ~@TODOLINK documentation pages configuration reference~ contains details of all the other  available documentation configuration options.
+The [documentation pages configuration reference](./documentation/configuration-reference.html) contains details of all the other  available documentation configuration options.
 
 ### Configuring the web UI
 
-Web UI configuration is done using the  ~@TODOLINK `fractal.web.set()`~ method.
+Web UI configuration is done using the [`fractal.web.set()`](../api/endpoints/fractal-web.html#set-path-value) method.
 
-To serve a directory of  ~@TODOLINK static assets~ via the web UI (so that you can link to stylesheets from your preview layouts, for example), you can specify the path to the directory using the `static.path` setting:
+To serve a directory of [static assets](./web/#static-assets) via the web UI (so that you can link to stylesheets from your preview layouts, for example), you can specify the path to the directory using the `static.path` setting:
 
 ```js
 fractal.web.set('static.path', __dirname + '/public');
 ```
 
-To set the directory within which any  ~@TODOLINK static HTML exports~ of the web UI should be generated, use the `builder.dest` setting:
+To set the directory within which any [static HTML exports](./web/exporting-static-html.html) of the web UI should be generated, use the `builder.dest` setting:
 
 ```js
 fractal.web.set('builder.dest', __dirname + '/build');
 ```
 
-The  ~@TODOLINK web UI configuration reference~ contains details of all the other available web configuration options.
+The [web UI configuration reference](./web/configuration-reference.html) contains details of all the other available web configuration options.
 
 ## Example project setup file
 

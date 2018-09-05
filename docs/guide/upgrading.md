@@ -34,6 +34,6 @@ Then run `npm update` from within your project directory to install the latest 1
 
 Fractal v1.x contains a number of breaking changes with respect to the 0.x branch. Most of which are centered around project setup and configuration.
 
-* **Project setup:** See the ~@TODOLINK project setup~ documentation for details on the updated syntax for creating and configuring a new Fractal instance.
-* **Template engines**: The syntax for registering and configuring template engines has changed. See the documentation for the ~@TODOLINK default Handlebars engine~ and the ~@TODOLINKtemplate engine customisation~ documentation for full details.
-* **Themes**: Theme loading and configuration has had significant changes, and the default theme (Mandelbrot) has been updated accordingly. See the ~@TODOLINK Mandelbrot docs~ and the more general ~@TODOLINK web theme customisation~ docs for info.
+* **Project setup:** See the [project setup](./project-settings.md) documentation for details on the updated syntax for creating and configuring a new Fractal instance.
+* **Template engines**: The syntax for registering and configuring template engines has changed. See the documentation for the [default Handlebars engine](./core-concepts/view-templates.md) and the [template engine customisation](./customisation/template-engines.md) documentation for full details.
+* **Themes**: Theme loading and configuration has had significant changes, and the default theme (Mandelbrot) has been updated accordingly. See the [Mandelbrot](./web/default-theme.md) and the more general [web theme customisation](./customisation/web-themes.md) docs for info.
