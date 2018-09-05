@@ -1,4 +1,5 @@
 module.exports = {
+  base: "/fractal-docs/",
   title: 'Fractal',
   description: 'Powerful component libraries & styleguides that fit the way you work.',
   themeConfig: {
