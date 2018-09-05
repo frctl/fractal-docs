@@ -14,26 +14,26 @@ If you are using the Fractal CLI tool, you can start the local web UI server (an
 fractal start --watch
 ```
 
-See the ~@TODOLINK @server', 'dev server') }} documentation for more information and configuration options.
+See the [dev server](./development-server.html) documentation for more information and configuration options.
 
 
 ## Configuration
 
-You can configure various aspects of the web UI using the ~@TODOLINK @api-web#set', '`fractal.web.set()`') }} method. For example, to use the integrated BrowserSync option by default, you can set the `sync` option to `true` as follows:
+You can configure various aspects of the web UI using the [`fractal.web.set()`](../../api/endpoints/fractal-web.html#set-path-value) method. For example, to use the integrated BrowserSync option by default, you can set the `sync` option to `true` as follows:
 
 ```js
 fractal.web.set('server.sync', true);
 ```
 
 ::: warning
-Only ~@TODOLINK @web-config', 'core web configuration') }} options can be set using the `fractal.web.set()` method. Theme-specific configuration options must be set on the theme instance itself.
+Only [core web configuration](./configuration-reference.html) options can be set using the [`fractal.web.set()`](../../api/endpoints/fractal-web.html#set-path-value) method. Theme-specific configuration options must be set on the theme instance itself.
 
-See the ~@TODOLINK @default-theme#configuration', 'default theme docs') }} or the ~@TODOLINK @customisation-web', 'themes customisation guide') }} for more information.
+See the [default theme docs](./default-theme.html#configuration) or the [themes customisation guide](../customisation/web-themes.html) for more information.
 :::
 
 ## Static Assets
 
-Most projects will have a directory of static assets (such as compiled stylesheets, JavaScript files, images etc) that need to be used by ~@TODOLINK @components', 'components') }} or linked to from within ~@TODOLINK @preview-layouts', 'preview layouts') }}.
+Most projects will have a directory of static assets (such as compiled stylesheets, JavaScript files, images etc) that need to be used by [components](../components/) or linked to from within [preview layouts](../components/preview-layouts.html).
 
 To serve static assets from within the web UI you can use the `static.path` configuration option to specify the path to a directory of assets:
 
@@ -65,13 +65,13 @@ The the dev server will now serve up the CSS and JS files from the previous exam
 
 ### Linking to assets from view templates
 
-If you want to link to any of your static assets from your components or preview layouts, it is **strongly recommended** that you use the supplied Handlebars ~@TODOLINK @views#handlebars-helpers', '`path` helper') }} to do so:
+If you want to link to any of your static assets from your components or preview layouts, it is **strongly recommended** that you use the supplied Handlebars [`path` helper](../core-concepts/view-templates.html#handlebars-helpers) to do so:
 
 ```
 {{path '/foobar/css/example.css'}}
 ```
 
-This helper lets you specify the static asset path as a root-relative URL such as `/foobar/css/example.css` and will then automatically take care of any path-rewriting necessary to support the ~@TODOLINK @builder', 'static HTML export process') }}.
+This helper lets you specify the static asset path as a root-relative URL such as `/foobar/css/example.css` and will then automatically take care of any path-rewriting necessary to support the [static HTML export process](./exporting-static-html.html).
 
 <!-- ### Exporting to static HTML
 
@@ -82,7 +82,7 @@ If you are using the static HTML export functionality, asset paths need to be am
 
 The web UI is built upon *themes*. Themes are very powerful, and allow complete control over everything from look and feel to URLs and functionality. Themes can be used to customise the look and feel of the web UI to match your project or even to give a completely different 'view' of your component library to different project stakeholders - for instance a 'no code' theme for people that might only be interested in reviewing the component previews.
 
-The ~@TODOLINK @default-theme', 'default theme') }} (called 'Mandelbrot') that ships with Fractal also supports a number of customisation options if you don't want to roll your own custom theme from scratch.
+The [default theme](./default-theme.html) (called 'Mandelbrot') that ships with Fractal also supports a number of customisation options if you don't want to roll your own custom theme from scratch.
 
 <!--
 

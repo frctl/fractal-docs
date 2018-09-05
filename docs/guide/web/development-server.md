@@ -31,11 +31,11 @@ As an example, the command:
 fractal start --watch --port 4000
 ```
 
-Would start the preview server at the URL `http://localhost:4000` and start watching the filesystem for changes.
+Would start the preview server at the URL [`http://localhost:4000`](http://localhost:4000) and start watching the filesystem for changes.
 
 ### Programmatically
 
-If you wish to start the server programmatically, (often useful for ~@TODOLINK @build-tools', 'build tool') }} integrations), you can create a new server instance using the ~@TODOLINK @api-web#server', '`fractal.web.server()`') }} method and then start and stop it as required:
+If you wish to start the server programmatically, (often useful for [build tool](../integration/build-tools.html) integrations), you can create a new server instance using the [`fractal.web.server()`](../../api/endpoints/fractal-docs.html#set-path-value) method and then start and stop it as required:
 
 ```js
 const server = fractal.web.server();
@@ -47,7 +47,7 @@ server.start().then(function(){
 server.stop();
 ```
 
-The ~@TODOLINK @api-server', '`Server`') }} object returned by the call to `fractal.web.server()` is a Node EventEmitter and will emit error events (and others) that you can bind to. See the ~@TODOLINK @api-web', '`fractal.web`') }} API docs for full details.
+The [`Server`](../../api/entities/server.html) object returned by the call to `fractal.web.server()` is a Node EventEmitter and will emit error events (and others) that you can bind to. See the [`fractal.web`](../../api/endpoints/fractal-web.html) API docs for full details.
 
 ## BrowserSync integration
 
@@ -65,7 +65,7 @@ BrowserSync can be enabled as a global option, when starting the server via the 
 
 ### Enabling globally
 
-You can ~@TODOLINK @project-settings', 'configure') }} your Fractal instance to use BrowserSync integration whenever the server is started as follows:
+You can [configure](../project-settings.html) your Fractal instance to use BrowserSync integration whenever the server is started as follows:
 
 ```js
 fractal.web.set('server.sync', true);

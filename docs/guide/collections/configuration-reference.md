@@ -6,7 +6,7 @@ title: Configuration reference
 
 Collection configuration files can specify a number of properties. Some of these apply to the collection itself, while other 'heritable' properties act instead as 'default' values for items contained within the collection.
 
-See the ~@TODOLINK @configuration-files#configuration-inheritance', 'configuration inheritance') }} documentation for more details on this process works in practice.
+See the [configuration inheritance](../core-concepts/configuration-files.html#configuration-inheritance) documentation for more details on this process works in practice.
 
 ## Collection properties
 
@@ -50,5 +50,5 @@ The majority of properties set in a collection configuration file apply not to t
 
 **For details on the available cascading configuration properties** that will apply to  child items, see the relevant configuration reference sections:
 
-* ~@TODOLINK @components-config#collection-properties', 'Component collections') }}
-* ~@TODOLINK @docs-config#collection-properties', 'Documentation collections') }}
+* [Component collections](../components/configuration-reference.html#collection-properties)
+* [Documentation collections](../documentation/configuration-reference.html#collection-properties)

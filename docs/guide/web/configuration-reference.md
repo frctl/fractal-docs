@@ -4,9 +4,9 @@ title: Configuration reference
 
 # Web UI configuration
 
-There are a number of global configuration options available to customise the behaviour of both the ~@TODOLINK @server', 'development web server') }} and the ~@TODOLINK @builder', 'static HTML builder') }}.
+There are a number of global configuration options available to customise the behaviour of both the [development web server](./development-server.html) and the [static HTML builder](../web/exporting-static-html.html).
 
-These options can be set on your Fractal instance using the ~@TODOLINK @api-web#set', '`fractal.web.set()`') }} method. See the ~@TODOLINK @project-settings', 'project settings') }} documentation for more details.
+These options can be set on your Fractal instance using the [`fractal.web.set()`](../../api/endpoints/fractal-web.html#set-path-value) method. See the [project settings](../project-settings.html) documentation for more details.
 
 ### builder.concurrency
 
@@ -84,7 +84,7 @@ fractal.web.set('server.watch', true); // default is false
 
 ### static.path
 
-The path to the directory where your static assets live. Any assets within this directory will be made available to your components and preview layouts at a URL path relative to this directory. See the ~@TODOLINK @web#static-assets', 'static assets') }} documentation for more details.
+The path to the directory where your static assets live. Any assets within this directory will be made available to your components and preview layouts at a URL path relative to this directory. See the [static assets](../web/#static-assets) documentation for more details.
 
 ```js
 fractal.web.set('static.path', __dirname + '/public');
@@ -93,7 +93,7 @@ fractal.web.set('static.path', __dirname + '/public');
 
 ### static.mount
 
-Virtual path prefix for the files that are served from the static asset directory specified in the `static.path` option. See the ~@TODOLINK @web#static-assets', 'static assets') }} documentation for more details.
+Virtual path prefix for the files that are served from the static asset directory specified in the `static.path` option. See the [static assets](../web/#static-assets) documentation for more details.
 
 ```js
 fractal.web.set('static.path', 'project-assets');

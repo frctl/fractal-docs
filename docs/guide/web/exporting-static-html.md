@@ -7,7 +7,7 @@ title: Exporting to static HTML
 Fractal provides the option to export the web UI view into static HTML files, which can quickly and easily be shared with clients or hosted using a simple static file server.
 
 ::: tip
-When developing locally you'll want to use the ~@TODOLINK @server', 'local development server') }} to preview your project while you work on it, rather than running repeated exports after changes have been made.
+When developing locally you'll want to use the [local development server](./development-server.html) to preview your project while you work on it, rather than running repeated exports after changes have been made.
 :::
 
 ## Configuration
@@ -36,7 +36,7 @@ You can provide the following optional command line options to override the defa
 
 ### Programmatically
 
-If you wish to start the export process programmatically, (often useful for ~@TODOLINK @build-tools', 'build tool') }} integrations), you can create a new builder instance using the ~@TODOLINK @api-web#builder', '`fractal.web.builder()`') }} method and then start it as required:
+If you wish to start the export process programmatically, (often useful for [build tool](../integration/build-tools.html) integrations), you can create a new builder instance using the [`fractal.web.builder()`](../../api/endpoints/fractal-web.html#builder) method and then start it as required:
 
 ```js
 const builder = fractal.web.builder();
@@ -46,4 +46,4 @@ builder.build().then(function(){
 });
 ```
 
-The ~@TODOLINK @api-builder', '`Builder`') }} object returned by the call to `fractal.web.builder()` is a Node EventEmitter and will emit error events (and others) that you can bind to. See the ~@TODOLINK @api-web', '`fractal.web`') }} API docs for full details.
+The [`Builder`](../../api/entities/builder.html) object returned by the call to `fractal.web.builder()` is a Node EventEmitter and will emit error events (and others) that you can bind to. See the [`fractal.web`](../../api/endpoints/fractal-web.html) API docs for full details.

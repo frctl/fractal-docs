@@ -6,7 +6,7 @@ title: Overview
 
 Collections are just groups of related components or documentation pages. When you create a directory that contains one or more components or pages inside it, you have created a collection.
 
-However beyond just grouping items, collections are useful because they can have their own ~@TODOLINK @configuration-files') }} within which you can specify properties that will then be **applied to all child items** within that collection, saving you from having to specify them on each item. Of course, individual components, pages (or indeed sub-collections) can still ~@TODOLINK @configuration-files#configuration-inheritance', 'override these defaults') }} on a case-by-case basis if needed.
+However beyond just grouping items, collections are useful because they can have their own [configuration files](../core-concepts/configuration-files.html) within which you can specify properties that will then be **applied to all child items** within that collection, saving you from having to specify them on each item. Of course, individual components, pages (or indeed sub-collections) can still [override these defaults](../core-concepts/configuration-files.html#configuration-inheritance) on a case-by-case basis if needed.
 
 ## Configuration files
 
@@ -33,7 +33,7 @@ context:
 
 ### Available config properties
 
-The ~@TODOLINK @collections-config', 'collection configuration reference') }} contains full details of all the collection properties available for use.
+The [collection configuration reference](./configuration-reference.html) contains full details of all the collection properties available for use.
 
 ## Ordering collections
 
