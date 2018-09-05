@@ -221,7 +221,7 @@ A set of [Handlebars partials](http://handlebarsjs.com/#partials) to make availa
 
 #### pristine
 
-Defaults to `false`. Set to `true` if you **do not wish** to automatically load any of the [bundled helpers](./view-templates.html/#using-handlebars) into your Handlebars instance.
+Defaults to `false`. Set to `true` if you **do not wish** to automatically load any of the [bundled helpers](./view-templates.html#using-handlebars) into your Handlebars instance.
 
 ```js
 {

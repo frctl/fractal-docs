@@ -103,7 +103,7 @@ title: FooCorp Components
 This is the component library for FooCorp. **Feel free to look around!**
 ```
 
-The Markdown file also contains some YAML front-matter to specify a title for the page - check out the [documentation pages section](./docs) for more details on this and all the other things that you can do with Fractal's powerful documentation engine.
+The Markdown file also contains some YAML front-matter to specify a title for the page - check out the [documentation pages section](./documentation/) for more details on this and all the other things that you can do with Fractal's powerful documentation engine.
 
 ### 5. Start the development server
 
