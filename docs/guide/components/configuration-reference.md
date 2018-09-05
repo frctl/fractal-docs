@@ -6,11 +6,11 @@ title: Configuration reference
 
 There are a number of global configuration options you can set to determine how Fractal handles components.
 
-Additionally, components and component ~@TODOLINK @collections', 'collections') }} can also have their own (optional) ~@TODOLINK @configuration-files', 'configuration files') }}  associated with them. ~@TODOLINK @variants', 'Component variants') }} are configured within their parent component's configuration file.
+Additionally, components and component [collections](../collections/) can also have their own (optional) [configuration files](../core-concepts/configuration-files.html)  associated with them. [Component variants](../components/variants.html) are configured within their parent component's configuration file.
 
 ## Global configuration options
 
-These options can be set on your Fractal instance using the ~@TODOLINK @api-components#set', '`fractal.components.set()`') }} method. See the ~@TODOLINK @project-settings', 'project settings') }} documentation for more details.
+These options can be set on your Fractal instance using the [`fractal.components.set()`](../../api/endpoints/fractal-components.html#set-path-value) method. See the [project settings](../project-settings.html) documentation for more details.
 
 ### default.collated
 
@@ -32,7 +32,7 @@ fractal.components.set('default.collator', function(markup, item) {
 
 ### default.context
 
-Global ~@TODOLINK @context-data', 'context data') }} that will be made available to all components when rendering previews, unless overridden in a collection or component configuration file.
+Global [context data](../core-concepts/context-data.html) that will be made available to all components when rendering previews, unless overridden in a collection or component configuration file.
 
 ```js
 fractal.components.set('default.context', {
@@ -54,7 +54,7 @@ fractal.components.set('default.display', {
 
 ### default.prefix
 
-Global prefix to apply to all generated ~@TODOLINK @naming#referencing-other-items', 'handles') }} unless overridden in a collection or component configuration file.
+Global prefix to apply to all generated [handles](../core-concepts/naming.html#referencing-other-items) unless overridden in a collection or component configuration file.
 
 ```js
 fractal.components.set('default.prefix', 'foobar'); // default is null
@@ -62,7 +62,7 @@ fractal.components.set('default.prefix', 'foobar'); // default is null
 
 ### default.preview
 
-Which layout (specified by its ~@TODOLINK @naming#referencing-other-items', 'handle') }}) to use to when rendering previews of this layout. See the ~@TODOLINK @preview-layouts', 'preview layouts') }} documentation for more details
+Which layout (specified by its [handle](../core-concepts/naming.html#referencing-other-items)) to use to when rendering previews of this layout. See the [preview layouts](./preview-layouts.html) documentation for more details
 
 ```js
 fractal.components.set('default.preview', '@my-preview-layout');
@@ -78,7 +78,7 @@ fractal.components.set('default.status', 'wip'); // default is 'ready'
 
 ### ext
 
-The file extension that will be used for all component ~@TODOLINK @views', 'view templates') }}. Note that this must include the leading `.`
+The file extension that will be used for all component [view templates](../core-concepts/view-templates.html). Note that this must include the leading `.`
 
 ```js
 fractal.components.set('ext', '.handlebars'); // default is '.hbs'
@@ -104,7 +104,7 @@ fractal.components.set('path', __dirname + '/src/components');
 
 ### statuses
 
-The set of available statuses that can be assigned to components. See the ~@TODOLINK @statuses', 'statuses documentation') }} for details of the default values and how to override them as required.
+The set of available statuses that can be assigned to components. See the [statuses documentation](../core-concepts/statuses.html) for details of the default values and how to override them as required.
 
 ```js
 fractal.components.set('statuses', {
@@ -131,7 +131,7 @@ fractal.components.set('title', 'Patterns'); // default is 'Components'
 
 ### yield
 
-The name of the variable that will be used in preview layouts as a placeholder for the rendered content. See the ~@TODOLINK @preview-layouts', 'preview layouts documentation') }} for more information.
+The name of the variable that will be used in preview layouts as a placeholder for the rendered content. See the [preview layouts documentation](./preview-layouts.html) for more information.
 
 ```js
 fractal.components.set('yield', 'rendered_content'); // default is 'yield'
@@ -139,7 +139,7 @@ fractal.components.set('yield', 'rendered_content'); // default is 'yield'
 
 ## Component properties
 
-The following properties can be specified in a component ~@TODOLINK @configuration-files', 'configuration file') }}:
+The following properties can be specified in a component [configuration file](../core-concepts/configuration-files.html):
 
 ### collated
 
@@ -163,9 +163,9 @@ Function to be used when collating components. Can only be specified if using JS
 
 ### context
 
-The ~@TODOLINK @context-data', 'context data') }} to pass to the template when rendering previews.
+The [context data](../core-concepts/context-data.html) to pass to the template when rendering previews.
 
-`context` is an **inheritable property**. Any context data set on the component will be *merged* with context data set upstream in the ~@TODOLINK @configuration-files#configuration-inheritance', 'configuration cascade') }}.
+`context` is an **inheritable property**. Any context data set on the component will be *merged* with context data set upstream in the [configuration cascade](../core-concepts/configuration-files.html#configuration-inheritance).
 
 ```yaml
 context:
@@ -221,7 +221,7 @@ label: 'Mega Buttons'
 
 Overrides the component name, which is otherwise extracted from the component view filename. Name values must be all lowercase, and contain only alphanumeric characters with hyphens or underscores for word seperators.
 
-Setting this will also have the affect of changing the ~@TODOLINK @naming#referencing-other-items', 'component\'s handle') }}.
+Setting this will also have the affect of changing the [component\'s handle](../core-concepts/naming.html#referencing-other-items).
 
 ```yaml
 name: 'mega-buttons'
@@ -245,7 +245,7 @@ order: 4
 
 ### preview
 
-Which layout (specified by ~@TODOLINK @naming#referencing-other-items', 'handle') }}) to use to when rendering previews of this layout. See the ~@TODOLINK @preview-layouts', 'preview layouts') }} documentation for more details
+Which layout (specified by [handle](../core-concepts/naming.html#referencing-other-items)) to use to when rendering previews of this layout. See the [preview layouts](./preview-layouts.html) documentation for more details
 
 ```yaml
 preview: '@my-preview-layout'
@@ -253,9 +253,9 @@ preview: '@my-preview-layout'
 
 ### status
 
-The status of a component. See the ~@TODOLINK @statuses', 'statuses documentation') }} for information on using and customising component statuses.
+The status of a component. See the [statuses documentation](../core-concepts/statuses.html) for information on using and customising component statuses.
 
-`status` is an **inheritable property**. If not set directly on the component it will inherit any status set further up in the ~@TODOLINK @configuration-files#configuration-inheritance', 'configuration cascade') }}.
+`status` is an **inheritable property**. If not set directly on the component it will inherit any status set further up in the [configuration cascade](../core-concepts/configuration-files.html#configuration-inheritance).
 
 ```yaml
 status: 'wip'
@@ -273,7 +273,7 @@ title: 'Amazing Mega Buttons'
 
 An array of tags to add to the component. Can be used by plugins and tasks to filter components.
 
-`tags` is an **inheritable property**. Tags set on the component will be *merged* with tags set upstream in the ~@TODOLINK @configuration-files#configuration-inheritance', 'configuration cascade') }}.
+`tags` is an **inheritable property**. Tags set on the component will be *merged* with tags set upstream in the [configuration cascade](../core-concepts/configuration-files.html#configuration-inheritance).
 
 ```yaml
 tags: ['sprint-1', 'foobar']
@@ -281,7 +281,7 @@ tags: ['sprint-1', 'foobar']
 
 ### variants
 
-An array of variant configuration objects. See the variant properties options (below) and the ~@TODOLINK @variants', 'variants documentation') }} for more information on working with variants.
+An array of variant configuration objects. See the variant properties options (below) and the [variants documentation](./variants.html) for more information on working with variants.
 
 Many variant properties are **inherited from the parent component**, and all apart from the `name` value are optional.
 
@@ -297,11 +297,11 @@ variants:
 ```
 ## Variant properties
 
-Variants can be defined in the parent component's configuration file. See the ~@TODOLINK @variants', 'variants documentation') }} for full details on creating and configuring variants.
+Variants can be defined in the parent component's configuration file. See the [variants documentation](./variants.html) for full details on creating and configuring variants.
 
 ### context
 
-The ~@TODOLINK @context-data', 'context data') }} to pass to the variant view template when rendering previews.
+The [context data](../core-concepts/context-data.html) to pass to the variant view template when rendering previews.
 
 Any context set on a variant will be merged with its parent component's (inherited and merged) context data.
 
@@ -323,7 +323,7 @@ display:
 
 The name of the variant. This is the only **mandatory property** for variant definitions.
 
-A variant with a name of 'large' that belongs to the component named 'button' will have a ~@TODOLINK @naming#referencing-other-items', 'handle') }} of **@button--large**.
+A variant with a name of 'large' that belongs to the component named 'button' will have a [handle](../core-concepts/naming.html#referencing-other-items) of **@button--large**.
 
 ```yaml
 name: 'unicorn'
@@ -339,7 +339,7 @@ notes: "Different from the default component because this one is *funky*."
 
 ### preview
 
-Which layout (specified by its ~@TODOLINK @naming#referencing-other-items', 'handle') }} to use to when rendering previews of this layout. See the ~@TODOLINK @preview-layouts', 'preview layouts') }} documentation for more details.
+Which layout (specified by its [handle](../core-concepts/naming.html#referencing-other-items) to use to when rendering previews of this layout. See the [preview layouts](./preview-layouts.html) documentation for more details.
 
 This overrides any the (inherited) `preview` value of the parent component.
 
@@ -365,7 +365,7 @@ view: 'component--funky.hbs'
 
 ## Collection properties
 
-Collections can specify properties that should be applied to all child components of that collection via ~@TODOLINK @configuration-files#configuration-inheritance', 'configuration cascade') }}. See the ~@TODOLINK @collections', 'documentation on collections') }} for more details on how to work with collections, and for details on available non-inheritable properties like `label` and `title`.
+Collections can specify properties that should be applied to all child components of that collection via [configuration cascade](../core-concepts/configuration-files.html#configuration-inheritance). See the [documentations on collections](../collections/) for more details on how to work with collections, and for details on available non-inheritable properties like `label` and `title`.
 
 The following properties can be set on page collections and will affect the pages within them:
 
@@ -391,7 +391,7 @@ Function to be used when collating components in the collection. Can only be spe
 
 ### context
 
-~@TODOLINK @context-data', 'context data') }} to be applied to children of the collection. Any context set on a collection will be merged into any contexts set by its children.
+[context data](../core-concepts/context-data.html) to be applied to children of the collection. Any context set on a collection will be merged into any contexts set by its children.
 
 ```yaml
 context:
@@ -409,7 +409,7 @@ display:
 
 ### preview
 
-The default preview layout (specified by its ~@TODOLINK @naming#referencing-other-items', 'handle') }} that child components should when being rendered as a preview. See the ~@TODOLINK @preview-layouts', 'preview layouts') }} documentation for more details.
+The default preview layout (specified by its [handle](../core-concepts/naming.html#referencing-other-items) that child components should when being rendered as a preview. See the [preview layouts](./preview-layouts.html) documentation for more details.
 
 ```yaml
 preview: '@my-special-layout'
@@ -417,7 +417,7 @@ preview: '@my-special-layout'
 
 ### prefix
 
-A string to be prefixed on to the generated ~@TODOLINK @naming#referencing-other-items', 'handles') }} of all components (and variants) in that collection.
+A string to be prefixed on to the generated [handles](../core-concepts/naming.html#referencing-other-items) of all components (and variants) in that collection.
 
 ```yaml
 prefix: 'atoms'

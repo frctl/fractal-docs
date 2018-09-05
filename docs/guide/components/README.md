@@ -14,8 +14,8 @@ Unlike some other systems, Fractal does not enforce any specific nomenclature or
 
 In order for Fractal to recognise your components, they must:
 
-1. Live within the component directory that you specified in your ~@TODOLINK @project-settings', 'project settings') }}.
-2. Have a 'view' file, containing the markup required to render your component. This should have a file extension that matches the one specified in your ~@TODOLINK @project-settings', 'project settings') }} (if not specified, the default is `.hbs`).
+1. Live within the component directory that you specified in your [project settings](../project-settings.html).
+2. Have a 'view' file, containing the markup required to render your component. This should have a file extension that matches the one specified in your [project settings](../project-settings.html) (if not specified, the default is `.hbs`).
 
 Optionally, components can also:
 
@@ -27,14 +27,14 @@ Optionally, components can also:
 The markup for a component can either be written as 'vanilla' HTML or using a template language of your choosing. By default, Fractal expects that you are using [Handlebars](http://handlebarsjs.com) templates for your component view files, and that these files will have a `.hbs` file extension.
 
 ::: tip
-The ~@TODOLINK @views', 'view templates') }} documentation contains more details on the default Handlebars instance and the ~@TODOLINK @template-engines', 'template engine customisation') }} documentation has full details how to use and configure alternative template engines with Fractal.
+The [view templates](../core-concepts/view-templates.html) documentation contains more details on the default Handlebars instance and the [template engine customisation](../customisation/template-engines.html) documentation has full details how to use and configure alternative template engines with Fractal.
 :::
 
 Components can be created in two ways. The simplest component is just as a single file containing your markup, whilst more complex, 'compound' components can be created as a directory of associated files.
 
 ## Simple components
 
-The simplest possible component consists of just a single ~@TODOLINK @views', 'view template') }}. The name of the component will be taken to be the name of that file, minus the file extension.
+The simplest possible component consists of just a single [view template](../core-concepts/view-templates.html). The name of the component will be taken to be the name of that file, minus the file extension.
 
 So a `button.hbs` file in the components directory will be identified as a component with the name of 'button'.
 
@@ -43,7 +43,7 @@ So a `button.hbs` file in the components directory will be identified as a compo
 │   └── button.hbs
 ```
 
-Simple components can have ~@TODOLINK @configuration-files', 'configuration files') }} associated with them. These must reside in the same directory and have the same name as the component but have a `.config.{js|json|yml}` file extension. So a JSON configuration file for the button component would be called `button.config.json`.
+Simple components can have [configuration files](../core-concepts/configuration-files.html) associated with them. These must reside in the same directory and have the same name as the component but have a `.config.{js|json|yml}` file extension. So a JSON configuration file for the button component would be called `button.config.json`.
 
 ```
 ├── components
@@ -57,7 +57,7 @@ The one caveat regarding naming simple components is that they **must not have t
 
 Compound components allow you to group associated files (such as asset files, tests, READMEs etc) along with your primary component files.
 
-The simplest compound component consists of a directory containing a single ~@TODOLINK @views', 'view template') }}. The name of this view file **must** match the name of the directory. A 'block quote' component might therefore look like this:
+The simplest compound component consists of a directory containing a single [view template](../core-concepts/view-templates.html). The name of this view file **must** match the name of the directory. A 'block quote' component might therefore look like this:
 
 ```
 ├── components
@@ -65,7 +65,7 @@ The simplest compound component consists of a directory containing a single ~@TO
 │       └── blockquote.hbs
 ```
 
-~@TODOLINK @configuration-files', 'Configuration files') }} can of course be added, again following the same naming convention (`[component-name].config.{js|json|yml}`). Other files added to the directory will then be associated with the component. These files do not have to adhere to any particular naming convention. So a full example may look like:
+[Configuration files](../core-concepts/configuration-files.html) can of course be added, again following the same naming convention (`[component-name].config.{js|json|yml}`). Other files added to the directory will then be associated with the component. These files do not have to adhere to any particular naming convention. So a full example may look like:
 
 ```
 ├── components
@@ -97,10 +97,10 @@ And can be used in many places, such as when including another component via a p
 </div>
 ```
 
-Other places that handles are used include when specifying a ~@TODOLINK @preview-layouts', 'preview layout') }} for a component or when referencing another components ~@TODOLINK @context-data', 'context data') }}.
+Other places that handles are used include when specifying a [preview layout](./preview-layouts.html) for a component or when referencing another components [context data](../core-concepts/context-data.html).
 
 ::: tip
-See the documentation on ~@TODOLINK @naming', 'naming & referencing') }} for more details on working with handles in Fractal.
+See the documentation on [naming & referencing](./notes.html) for more details on working with handles in Fractal.
 :::
 
 ## Ordering components

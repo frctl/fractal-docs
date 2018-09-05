@@ -8,7 +8,7 @@ Variants are useful when you have one component that has a **multiple different 
 
 A component can have as many variants as you like. Behind the scenes, *every* component has at least one variant - when you are previewing or rendering a component you are actually seeing its 'default' variant, even if you have not explicitly defined one.
 
-Variants will typically use the default view template for the component they belong to; the variation comes from the ability to define a different set of ~@TODOLINK @context-data', 'context data') }} that will be used when rendering previews. However it is also possible to use a completely different view template if desired (which itself can include the main view template as a partial should you so wish).
+Variants will typically use the default view template for the component they belong to; the variation comes from the ability to define a different set of [context data](../core-concepts/context-data.html) that will be used when rendering previews. However it is also possible to use a completely different view template if desired (which itself can include the main view template as a partial should you so wish).
 
 ## Creating variants
 
@@ -16,7 +16,7 @@ There are a few ways to create variants of a component. They can be defined with
 
 ### Defining variants in the component's config file
 
-Component ~@TODOLINK @configuration-files', 'configuration files') }} let you specify `variants` property. The value of this should be an array of variant definition objects. For example:
+Component [configuration files](../core-concepts/configuration-files.html) let you specify `variants` property. The value of this should be an array of variant definition objects. For example:
 
 ```js
 // notifications.config.json
@@ -37,7 +37,7 @@ Component ~@TODOLINK @configuration-files', 'configuration files') }} let you sp
 Every variant that is defined *must* have a value for the `name` property. **This is the only required property for a variant.**
 :::
 
-Variants inherit many properties set on the parent component, or indeed further up in the ~@TODOLINK @configuration-files#configuration-inheritance', 'configuration cascade') }}, which means that you can set properties like `status` only once, on the parent component, and then just override them on a variant-by-variant basis if needed. The ~@TODOLINK @components-config', 'component configuration reference') }} has full details on the properties you can set on your variants.
+Variants inherit many properties set on the parent component, or indeed further up in the [configuration cascade](../core-concepts/configuration-files.html#configuration-inheritance), which means that you can set properties like `status` only once, on the parent component, and then just override them on a variant-by-variant basis if needed. The [component configuration reference](../components/configuration-reference.html) has full details on the properties you can set on your variants.
 
 The above example wouldn't give us anything very interesting, so let's look at how we could actually implement the notification banner example described in the overview section. Given a view template that looks like this:
 
@@ -190,4 +190,4 @@ Variants are generally exposed in UIs (such as the web UI) as individual items u
 
 This can useful for when you have many variations of a small component such as a button and want to preview them all together, rather than having to flick between previews of each one individually.
 
-To render a component in this way you need to set the `collated` property to `true` in the ~@TODOLINK @components-config#component-properties', 'component configuration file') }}.
+To render a component in this way you need to set the `collated` property to `true` in the [component configuration file](../components/configuration-reference.html#component-properties).
