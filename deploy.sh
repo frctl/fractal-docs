@@ -4,7 +4,7 @@
 set -e
 
 # build
-npm run docs:build
+yarn docs:build
 
 # navigate into the build output directory
 cd docs/.vuepress/dist
@@ -20,6 +20,6 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:samuelgoddard/fractal-docs.git master
+git push -f git@github.com:samuelgoddard/fractal-docs.git gh-pages
 
 cd -
