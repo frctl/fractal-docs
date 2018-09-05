@@ -16,7 +16,7 @@ Preview layouts are just another component, and so must reside in your component
 
 For example, we could create a preview layout called `_preview.hbs` in the root our components directory:
 
-```tree
+```
 ├── components
 │   └── _preview.hbs
 ```

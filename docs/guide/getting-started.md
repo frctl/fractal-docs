@@ -29,7 +29,7 @@ The first thing to do is to create directories for your components and for your 
 
 So the project directory now looks like this:
 
-```tree
+```
 ├── src
 │   ├── components
 │   └── docs
@@ -44,7 +44,7 @@ You now need to create a new instance of Fractal, and set a few configuration op
 
 The convention is to do this in a file named `fractal.js` in the root of your project directory:
 
-```tree
+```
 ├── src
 │   ├── components
 │   └── docs

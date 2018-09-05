@@ -23,7 +23,7 @@ The most basic component just consists of a single markup (view) file with the a
 
 As an example, let's create a simple blockquote component. To do this, we'll create a file called `blockquote.hbs` at the top level of our components directory. So our component directory fike tree will look something like this:
 
-```tree
+```
 ├── components
 │   └── blockquote.hbs
 ```
@@ -60,7 +60,7 @@ So now we just need a way to specify the data that should be passed to our view 
 
 So let's create a config file, called `blockquote.config.yml` for our blockquote component. Our file tree now looks like:
 
-```tree
+```
 ├── components
 │   ├── blockquote.config.yml
 │   └── blockquote.hbs
@@ -112,7 +112,7 @@ To create a variant, add another file into your components directory, called `bl
 
 So our file tree now looks like this:
 
-```tree
+```
 ├── components
 │   ├── blockquote.config.yml
 │   ├── blockquote--fancy.hbs
@@ -127,7 +127,7 @@ If you refresh the web preview UI in your browser again you should see that a va
 
 Preview layouts are themselves components. That means you can use your actual site 'skeleton' component (if you have one), or you can create a separate one just for the purpose of wrapping your component previews. In this example, we we are going to do the latter and create a component called `_preview.hbs` in the root of our component directory, like so:
 
-```tree
+```
 ├── components
 │   ├── _preview.hbs
 │   ├── blockquote.config.yml
@@ -178,7 +178,7 @@ In a real-life situation, components will often have more than just markup assoc
 
 In order to associate files with our blockquote component, we will need to turn it into a 'compound' component. A compound component is one that consists of a directory containing your view file, plus any related files. The directory name must be the same as the component view file name. So to turn our simple blockquote component into  a compound component, we will put it into a subdirectory called `blockquote` and add our related files. So, with the addition of a few extra files, our blockquote component might now look something like this:
 
-```tree
+```
 ├── components
 │   ├── _preview.hbs
 │   ├── blockquote

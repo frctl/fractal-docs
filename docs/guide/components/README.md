@@ -38,14 +38,14 @@ The simplest possible component consists of just a single ~@TODOLINK @views', 'v
 
 So a `button.hbs` file in the components directory will be identified as a component with the name of 'button'.
 
-```tree
+```
 ├── components
 │   └── button.hbs
 ```
 
 Simple components can have ~@TODOLINK @configuration-files', 'configuration files') }} associated with them. These must reside in the same directory and have the same name as the component but have a `.config.{js|json|yml}` file extension. So a JSON configuration file for the button component would be called `button.config.json`.
 
-```tree
+```
 ├── components
 │   ├── button.config.json
 │   └── button.hbs
@@ -59,7 +59,7 @@ Compound components allow you to group associated files (such as asset files, te
 
 The simplest compound component consists of a directory containing a single ~@TODOLINK @views', 'view template') }}. The name of this view file **must** match the name of the directory. A 'block quote' component might therefore look like this:
 
-```tree
+```
 ├── components
 │   └── blockquote
 │       └── blockquote.hbs
@@ -67,7 +67,7 @@ The simplest compound component consists of a directory containing a single ~@TO
 
 ~@TODOLINK @configuration-files', 'Configuration files') }} can of course be added, again following the same naming convention (`[component-name].config.{js|json|yml}`). Other files added to the directory will then be associated with the component. These files do not have to adhere to any particular naming convention. So a full example may look like:
 
-```tree
+```
 ├── components
 │   └── blockquote
 │   │   ├── blockquote.config.yml
@@ -107,7 +107,7 @@ See the documentation on ~@TODOLINK @naming', 'naming & referencing') }} for mor
 
 A component can be given an order by which to sort it with regards to its siblings. This can be done by using the `order` property in the components's configuration file, or it can be done by prefixing the component file name (or the parent folder name for compound components) with a **two-digit number** (with leading zero, if required) **followed by a hyphen**. For example:
 
-```tree
+```
 ├── components
 │   ├── 01-blockquote.hbs
 │   ├── 01-link-list
@@ -118,7 +118,7 @@ A component can be given an order by which to sort it with regards to its siblin
 
 A component can be hidden from navigation and listings by using the `hidden` property in its configuration file or by prefixing its file name (or the parent folder name for compound components) with an underscore like this:
 
-```tree
+```
 ├── components
 │   ├── _blockquote.hbs
 │   ├── _link-list

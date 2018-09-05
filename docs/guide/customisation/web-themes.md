@@ -62,7 +62,7 @@ Repeating these theme customisations for every project is clearly not an optimal
 
 An example sub-theme folder structure, based on the default Mandelbrot theme with a few some UI tweaks, might look something like this:
 
-```tree
+```
 ├── assets
 │   └── tweaks.css
 ├── views
@@ -130,13 +130,13 @@ Once you have created a sub-theme, you can [publish it as an NPM module](https:/
 
 You can then install the theme in any of your projects by installing it via NPM, using using the `npm install` command:
 
-```plain
+```
 npm install <module-name> --save
 ```
 
 If you have not published the theme as a module but instead as a (for example) Github repo, you can still use the `npm install` command to install it [directly from your repository](http://www.zev23.com/2014/03/npm-install-from-github-or-bitbucket_13.html):
 
-```plain
+```
 npm install git+ssh://git@github.com/<repo-owner>/<repo>.git
 ```
 

@@ -92,7 +92,7 @@ Note that the `_self` variable is actually a JSON representation of the page obj
 
 Pages can be ordered by prefixing file names with a **two digit number** (with leading zero, if required) **followed by a hyphen**. For example:
 
-```tree
+```
 ├── pages
 │   ├── 01-index.md
 │   ├── 02-changelog.md
@@ -107,7 +107,7 @@ Alternatively, you can use the `order` property in the page's configuration file
 
 Pages can be hidden from listings and navigation in two ways. You can either specify `hidden: true` in the pages's configuration file or you can prefix the page's filename with an underscore. So in the following example, the `changelog` page would not show up in any navigation:
 
-```tree
+```
 ├── pages
 │   ├── _changelog.md
 │   ├── index.md

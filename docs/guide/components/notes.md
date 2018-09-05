@@ -12,7 +12,7 @@ Whilst Fractal lets you create rich standalone ~@TODOLINK @docs', 'documentation
 
 ~@TODOLINK @components#compound-components', "Compound components") }} can include a `README.md` file within their component folder:
 
-```tree
+```
 ├── components
 │   ├── blockquote
 │   │   ├── blockquote.hbs

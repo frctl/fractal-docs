@@ -43,7 +43,7 @@ fractal.web.set('static.path', __dirname + '/public');
 
 All files within that directory will now be made available at a URL that matches the file's path relative to the directory. For example, given the following project structure (and the configuration setting above):
 
-```tree
+```
 ├── components
 │   └── ...
 ├── public

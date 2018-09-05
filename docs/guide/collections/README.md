@@ -14,7 +14,7 @@ A collection configuration file follows the same rules as component and document
 
 So a component collection called 'layouts' could have a YAML configuration file called `layouts.config.yml`:
 
-```tree
+```
 ├── components
 │   ├── layouts
 │   │   ├── layouts.config.yml
@@ -39,7 +39,7 @@ The ~@TODOLINK @collections-config', 'collection configuration reference') }} co
 
 A collection can be given an order by which to sort it with regards to its siblings. This can be done by using the `order` property in the collection's configuration file, or it can be done by prefixing the collection directory name with a **two-digit number** (with leading zero, if required) **followed by a hyphen**. For example:
 
-```tree
+```
 ├── components
 │   ├── 01-patterns
 │   │   └── article.hbs
@@ -51,7 +51,7 @@ A collection can be given an order by which to sort it with regards to its sibli
 
 A collection can be hidden from navigation and listings by using the `hidden` property in its configuration file or by prefixing the collection directory name with an underscore like this:
 
-```tree
+```
 ├── components
 │   ├── _layouts
 │   │   └── sidebar.hbs

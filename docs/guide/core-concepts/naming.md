@@ -24,7 +24,7 @@ The name will also be used to generate a default **label** and a **title** for t
 
 Let's look at a simple example of how this works in practice, assuming that we have a component with a view template called `blockquote-large.hbs`:
 
-```tree
+```
 ├── components
 │   └── blockquote-large.hbs
 ```
@@ -40,7 +40,7 @@ Fractal relies on all items of a particular 'type' having **a unique handle**. S
 
 So in the following situation, Fractal would not 'see' the second `button` component:
 
-```tree
+```
 ├── components
 │   ├── standard
 │   │   └── button.hbs
@@ -59,7 +59,7 @@ Fractal also supports the use of optional filename 'metadata' for _hiding_ and _
 
 Items can be ordered by prefixing file names with a **two digit number** (with leading zero, if required) **followed by a hyphen**. For example:
 
-```tree
+```
 ├── pages
 │   ├── 01-index.md
 │   ├── 02-changelog.md
@@ -68,7 +68,7 @@ Items can be ordered by prefixing file names with a **two digit number** (with l
 
 Items can be hidden by **prefixing the filename by an underscore**:
 
-```tree
+```
 ├── components
 │   ├── _hidden-component.hbs
 │   └── article.hbs
@@ -86,7 +86,7 @@ One of the available properties you can set on a collection is the `prefix` prop
 
 Given the following setup:
 
-```tree
+```
 ├── components
 │   ├── standard
 │   │   └── button.hbs
@@ -128,7 +128,7 @@ This syntax can be used in a number of places, including:
 
 So for this example structure and data:
 
-```tree
+```
 ├── components
 │   └── banner.hbs
 │   ├── standard
@@ -156,7 +156,7 @@ So for this example structure and data:
 
 The following references could be used:
 
-```plain
+```
 banner.hbs           --> @banner
 standard/button.hbs` --> @clickme
 special/alert.hbs`   --> @sparkly-alert
