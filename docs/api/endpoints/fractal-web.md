@@ -15,7 +15,7 @@ fractal.web.server(); // obtain a server instance.
 
 * `config` - *Object* [optional]
 
-Obtain a new development ~@TODOLINK @api-server', 'Server') }} instance. Any configuration properties passed in will be merged with the current set of global ~@TODOLINK @web-config', 'server configuration properties') }},
+Obtain a new development [Server](../entities/server.html) instance. Any configuration properties passed in will be merged with the current set of global [server configuration properties](../../guide/web/configuration-reference.html),
 
 ```js
 const server1 = fractal.web.server();
@@ -24,19 +24,19 @@ const server2 = fractal.web.server({
 });
 ```
 
-See the ~@TODOLINK @api-server', 'Server API') }} documentation for details on usage.
+See the [Server API](../entities/server.html) documentation for details on usage.
 
 ### .builder(config)
 
 * `config` - *Object* [optional]
 
-Obtain a new ~@TODOLINK @api-builder', 'Builder') }} instance. Any configuration properties passed in will be merged with the current set of global ~@TODOLINK @web-config', 'web builder configuration properties') }},
+Obtain a new [Builder](../entities/builder.html) instance. Any configuration properties passed in will be merged with the current set of global [web builder configuration properties](../../guide/web/configuration-reference.html),
 
 ```js
 const builder = fractal.web.builder();
 ```
 
-See the ~@TODOLINK @api-builder', 'Builder API') }} documentation for details on usage.
+See the [Builder API](../entities/builder.html) documentation for details on usage.
 
 ### .theme(theme)
 
@@ -54,7 +54,7 @@ fractal.web.theme(myTheme); // or pass in a configured instance of a WebTheme
 * `path` - *String*
 * `value` - *String | Object*
 
-Set the value of a configuration setting, identified by its `path`. See the ~@TODOLINK @web-config', 'web configuration') }} documentation for details of available options.
+Set the value of a configuration setting, identified by its `path`. See the [web configuration](../../guide/web/configuration-reference.html) documentation for details of available options.
 
 ```js
 fractal.web.set('builder.dest', 'dist/output');
@@ -64,7 +64,7 @@ fractal.web.set('builder.dest', 'dist/output');
 
 * `path` - *String*
 
-Get the value of a configuration setting, identified by it's `path`. For a complete list of configuration values see the ~@TODOLINK @web-config', 'web configuration') }} documentation.
+Get the value of a configuration setting, identified by it's `path`. For a complete list of configuration values see the [web configuration](../../guide/web/configuration-reference.html) documentation.
 
 ```js
 console.log(fractal.web.get('builder.dest')); // 'dist/output'

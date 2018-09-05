@@ -17,7 +17,7 @@ const fractal = require('@frctl/fractal').create();
 * `path` - *String*
 * `value` - *String | Object*
 
-Set the value of a configuration setting, identified by its `path`. See the ~@TODOLINK @project-settings', 'project settings') }} documentation for details of available options.
+Set the value of a configuration setting, identified by its `path`. See the [project settings](../../guide/project-settings.html) documentation for details of available options.
 
 ```js
 fractal.set('project.title', 'My Component Library');
@@ -27,7 +27,7 @@ fractal.set('project.title', 'My Component Library');
 
 * `path` - *String*
 
-Get the value of a configuration setting, identified by it's `path`. For a complete list of configuration values see the [project settings](/docs/project-settings.md) documentation.
+Get the value of a configuration setting, identified by it's `path`. For a complete list of configuration values see the [project settings](../../guide/project-settings.html) documentation.
 
 ```js
 console.log(fractal.get('project.title')); // 'My Component Library'
@@ -76,19 +76,19 @@ fractal.unwatch();
 
 ### .components
 
-The component source object. See the ~@TODOLINK @api-components', '`fractal.components`') }} documentation for full details.
+The component source object. See the [`fractal.components`](./fractal-components.html) documentation for full details.
 
 ### .docs
 
-The documentation source object. See the ~@TODOLINK @api-docs', '`fractal.docs`') }} documentation for full details.
+The documentation source object. See the [`fractal.docs`](./fractal-docs.html) documentation for full details.
 
 ### .web
 
-Provides access to web server and build related methods. See the ~@TODOLINK @api-web', '`fractal.web`') }} documentation for full details.
+Provides access to web server and build related methods. See the [`fractal.web`](./fractal-web.html) documentation for full details.
 
 ### .cli
 
-Provides access to CLI related methods. See the ~@TODOLINK @api-cli', '`fractal.cli`') }} documentation for full details.
+Provides access to CLI related methods. See the [`fractal.cli`](./fractal-cli.html) documentation for full details.
 
 ### .version
 

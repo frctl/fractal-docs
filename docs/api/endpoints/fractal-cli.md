@@ -4,7 +4,7 @@ title: fractal.cli
 
 # fractal.cli
 
-The `.cli` property on the main fractal instance provides access to utilities for working with the Fractal ~@TODOLINK @cli', 'CLI tool') }}.
+The `.cli` property on the main fractal instance provides access to utilities for working with the Fractal [CLI tool](../../guide/cli/).
 
 ```
 const fractal = require('@frctl/fractal').create();
@@ -78,7 +78,7 @@ fractal.cli.error('Oops somthing went wrong!');
 * `path` - *String*
 * `value` - *String | Object*
 
-Set the value of a configuration setting, identified by its `path`. See the ~@TODOLINK @cli-config', 'web configuration') }} documentation for details of available options.
+Set the value of a configuration setting, identified by its `path`. See the [web configuration](../../guide/web/configuration-reference.html) documentation for details of available options.
 
 ```js
 fractal.web.set('builder.dest', 'dist/output');
@@ -88,7 +88,7 @@ fractal.web.set('builder.dest', 'dist/output');
 
 * `path` - *String*
 
-Get the value of a configuration setting, identified by it's `path`. For a complete list of configuration values see the ~@TODOLINK @web-config', 'web configuration') }} documentation.
+Get the value of a configuration setting, identified by it's `path`. For a complete list of configuration values see the [web configuration](../../guide/web/configuration-reference.html) documentation.
 
 ```js
 console.log(fractal.web.get('builder.dest')); // 'dist/output'

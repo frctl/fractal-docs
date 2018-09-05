@@ -12,7 +12,7 @@ fractal.docs.set('ext', '.html'); // set a configuration property on the documen
 ```
 
 ::: tip
-The `fractal.docs` object is a _Collection_ and so inherits all the methods that are available on Collection instances in addition to those documented below. See the ~@TODOLINK @api-collection', 'Collection documentation') }} for full details.
+The `fractal.docs` object is a _Collection_ and so inherits all the methods that are available on Collection instances in addition to those documented below. See the [Collection documentation](../entities/collection.html) for full details.
 :::
 
 ## Methods
@@ -22,7 +22,7 @@ The `fractal.docs` object is a _Collection_ and so inherits all the methods that
 * `path` - *String*
 * `value` - *String | Object*
 
-Set the value of a configuration setting, identified by its `path`. See the ~@TODOLINK @docs-config', 'docs configuration') }} documentation for details of available options.
+Set the value of a configuration setting, identified by its `path`. See the [docs configuration](../../guide/documentation/configuration-reference.html) documentation for details of available options.
 
 ```js
 fractal.docs.set('ext', '.html');
@@ -32,7 +32,7 @@ fractal.docs.set('ext', '.html');
 
 * `path` - *String*
 
-Get the value of a configuration setting, identified by it's `path`. For a complete list of configuration values see the ~@TODOLINK @docs-config', 'docs configuration') }} documentation.
+Get the value of a configuration setting, identified by it's `path`. For a complete list of configuration values see the [docs configuration](../../guide/documentation/configuration-reference.html) documentation.
 
 ```js
 console.log(fractal.docs.get('ext')); // '.html'
@@ -42,7 +42,7 @@ console.log(fractal.docs.get('ext')); // '.html'
 
 * `adapter` - *Adapter | String*
 
-Set the ~@TODOLINK @template-engines', 'template engine adapter') }} to be used for rendering the component view templates.
+Set the [template engine adapter](../../guide/customisation/template-engines.html) to be used for rendering the component view templates.
 
 ```js
 fractal.docs.engine('@frctl/nunjucks'); // no customisation needed, pass string of module name

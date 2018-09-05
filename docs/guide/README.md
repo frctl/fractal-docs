@@ -13,9 +13,9 @@ Fractal helps you assemble, preview and document website component libraries, an
 Fractal can be run from the command line or integrated into your project via its API.
 
 <div style="margin-bottom: 15px;">
-  <a target="_blank" href="https://www.npmjs.com/package/@frctl/fractal"><img src="https://img.shields.io/npm/v/@frctl/fractal.svg?style=flat-square" alt="NPM Badge"/></a>
-  <a target="_blank" href="https://travis-ci.org/frctl/fractal"><img src="https://img.shields.io/travis/frctl/fractal/master.svg?style=flat-square" alt="Build Status Badge"/></a>
-  <a target="_blank" href="http://github.com/frctl/fractal"><img src="https://img.shields.io/github/stars/frctl/fractal.svg?style=social&label=Star" alt="Github Badge"/></a>
+<a style="margin-right: 8px;" target="_blank" href="https://www.npmjs.com/package/@frctl/fractal"><img src="https://img.shields.io/npm/v/@frctl/fractal.svg?style=flat-square" alt="NPM Badge"/></a>
+<a style="margin-right: 8px;" target="_blank" href="https://travis-ci.org/frctl/fractal"><img src="https://img.shields.io/travis/frctl/fractal/master.svg?style=flat-square" alt="Build Status Badge"/></a>
+<a style="margin-right: 8px;" target="_blank" href="http://github.com/frctl/fractal"><img src="https://img.shields.io/github/stars/frctl/fractal.svg?style=social&label=Star" alt="Github Badge"/></a>
 </div>
 
 ## Requirements

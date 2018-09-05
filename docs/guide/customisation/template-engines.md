@@ -66,7 +66,7 @@ Currently there are specific 'official' adapters implemented for Handlebars, [Mu
 
 For full information on installing, using and customising individual template engine adapters, see the appropriate READMEs:
 
-* Handlebars adapter - see the ~@TODOLINK @views', 'view templates') }} documentation
+* Handlebars adapter - see the [view templates](../core-concepts/view-templates.html) documentation
 * [Mustache adapter](https://github.com/frctl/mustache)
 * [Nunjucks adapter](https://github.com/frctl/nunjucks)
 * [Generic/consolidate adapter](https://github.com/frctl/consolidate)
