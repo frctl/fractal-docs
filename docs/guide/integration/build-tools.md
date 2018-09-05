@@ -4,11 +4,11 @@ title: Build Tools
 
 # Integrating Fractal into build tools
 
-Fractal can happily be integrated into any JavaScript-based build tool by making use of ~@TODOLINK @api', 'its API') }}, and can reduce or replace the need to use Fractal's own ~@TODOLINK @cli', 'CLI tool') }} for running tasks such as starting the dev server.
+Fractal can happily be integrated into any JavaScript-based build tool by making use of [its API](../../api/), and can reduce or replace the need to use Fractal's own [CLI tool](../cli/) for running tasks such as starting the dev server.
 
 ## Gulp
 
-The following is an example `gulpfile.js` that defines two tasks, one to start the ~@TODOLINK @server', 'dev server') }} and one to ~@TODOLINK @builder', 'run a static export') }} of the web UI.
+The following is an example `gulpfile.js` that defines two tasks, one to start the [dev server](../web/development-server.html) and one to [run a static export](../web/exporting-static-html.html) of the web UI.
 
 Once added, these can be run as `gulp fractal:start` and `gulp fractal:build`. However you can of course change them to be called whatever you like!
 
@@ -79,7 +79,7 @@ gulp.task('fractal:build', function(){
 
 ## NPM Scripts
 
-Because the locally-installed Fractal module also includes the ~@TODOLINK @cli', 'CLI tool') }} binary, you can use it in your NPM scripts to provide a convenient way to run CLI tasks without having to have the Fractal CLI tool installed globally.
+Because the locally-installed Fractal module also includes the [CLI tool](../cli/) binary, you can use it in your NPM scripts to provide a convenient way to run CLI tasks without having to have the Fractal CLI tool installed globally.
 
 An example `package.json` file may therefore look like this:
 
@@ -98,4 +98,4 @@ An example `package.json` file may therefore look like this:
 }
 ```
 
-One thing to note here is that because you can't directly configure your Fractal instance within your `package.json` file, you will still need to have a `fractal.js` file ~@TODOLINK @project-settings', 'in your project root') }} to contain all your project setup information.
+One thing to note here is that because you can't directly configure your Fractal instance within your `package.json` file, you will still need to have a `fractal.js` file [in your project root](../project-settings.html) to contain all your project setup information.
