@@ -4,6 +4,17 @@ title: Overview
 
 # Fractal User Guide
 
+::: warning Current project status - Please read!
+As you may be aware, changes in Fractal's core team meant that new development on this project was restricted for a time.
+
+In order to safeguard its future, we decided to ask our community for help, and the response has been overwhelming. **We've received so many offers of support in all forms that we can safely say that development will be starting up again shortly. Thank you all!**
+
+Please see [issue #449](https://github.com/frctl/fractal/issues/449) ('An update on Fractal's future development') for more details about how we are planning on moving Fractal forwards in the future.
+
+Currently the 1.x (master) branch is stable and is being used in many projects. Documentation for this version is available below. The 2.0 (beta) branch is not recommended for use as there are many outstanding issues + bugs, limited documentation and no active development at this time.
+:::
+
+
 Fractal is a tool to help you **build** and **document** web component libraries, and then **integrate** them into your projects.
 
 Component (or pattern) libraries are a way of designing and building websites in a modular fashion, breaking up the UI into small, reusable chunks that can then later be assembled in a variety of ways to build anything from larger components right up to whole pages.
