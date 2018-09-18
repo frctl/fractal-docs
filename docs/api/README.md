@@ -4,9 +4,9 @@ title: Overview
 
 # Fractal API documentation
 
-Fractal provides a programmatic API that allows you to [write custom commands](../../guide/cli/custom-commands.html), [tie it into your build tools](../../guide/integration/build-tools.html) or help with integrating your component library into your [production site or application](../../guide/integration/integrating-into-production.html).
+Fractal provides a programmatic API that allows you to [write custom commands](../guide/cli/custom-commands.html), [tie it into your build tools](../guide/integration/build-tools.html) or help with integrating your component library into your [production site or application](../guide/integration/integrating-into-production.html).
 
-If you've created a [project settings file](../../guide/project-settings.html) for your project then you have already interacted with the Fractal API.
+If you've created a [project settings file](../guide/project-settings.html) for your project then you have already interacted with the Fractal API.
 
 ::: danger
 The Fractal API docs are currently very much a <strong>work in progress</strong>. Keep checking back regularly for updates!
