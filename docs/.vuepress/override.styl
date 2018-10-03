@@ -29,3 +29,38 @@ $accentColor = #C23582
 
 .custom-block.tip
   border-color: #c23582 !important
+
+.m-supporters
+  text-align: center
+  margin-bottom: 25px
+
+  p
+    color: #4e6e8e
+    margin-top: 1.55rem
+    margin-bottom: 0.75rem
+    font-size: 0.9rem
+
+  .m-supporters__all
+    margin-top: 1rem
+
+.m-supporters__grid
+  display: flex;
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+.m-supporters__item
+  width: 100%
+  margin: 0.5rem 0
+
+  @media only screen and (min-width: 420px)
+    flex-basis: 0;
+    max-width: 100%;
+    margin: 0 1.2rem
+
+  img
+    &:hover
+      opacity: 0.85
