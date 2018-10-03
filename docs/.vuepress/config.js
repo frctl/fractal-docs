@@ -1,7 +1,7 @@
 module.exports = {
   base: '/',
   title: 'Fractal',
-  serviceWorker: true,
+  serviceWorker: false,
   description: 'Powerful component libraries & styleguides that fit the way you work.',
   head: [
     ['link', { rel: 'icon', href: '/favicon.png' }]
