@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/fractal-docs/',
+  base: '/',
   title: 'Fractal',
   serviceWorker: true,
   description: 'Powerful component libraries & styleguides that fit the way you work.',
@@ -9,7 +9,7 @@ module.exports = {
   themeConfig: {
     docsDir: 'docs',
     lastUpdated: 'Last Updated', // string | boolean
-    repo: 'samuelgoddard/fractal-docs',
+    repo: 'frctl/fractal-docs',
     repoLabel: 'Github',
     editLinks: true,
     editLinkText: 'Help us improve this page!',
