@@ -22,7 +22,7 @@ footer: MIT Licensed | A Community Driven Project
   <div class="m-supporters__grid">
     <div class="m-supporters__item">
       <a target="_blank" href="https://slab.com/">
-        <img :src="$withBase('/slab-logo.png')" style="max-width: 75px;">
+        <img :src="$withBase('/slab-logo.png')" style="max-width: 70px;">
       </a>
     </div>
     <div class="m-supporters__item">
@@ -32,7 +32,7 @@ footer: MIT Licensed | A Community Driven Project
     </div>
     <div class="m-supporters__item">
       <a target="_blank" href="https://madebykind.com/">
-        <img :src="$withBase('/kind-logo.png')" style="max-width: 73px;">
+        <img :src="$withBase('/kind-logo.png')" style="max-width: 70px;">
       </a>
     </div>
   </div>
