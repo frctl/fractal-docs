@@ -27,12 +27,17 @@ footer: MIT Licensed | A Community Driven Project
     </div>
     <div class="m-supporters__item">
       <a target="_blank" href="https://clearleft.com/">
-        <img :src="$withBase('/clearleft-logo.png')" style="max-width: 100px;">
+        <img :src="$withBase('/clearleft-logo.png')" style="max-width: 90px;">
       </a>
     </div>
     <div class="m-supporters__item">
       <a target="_blank" href="https://madebykind.com/">
-        <img :src="$withBase('/kind-logo.png')" style="max-width: 70px;">
+        <img :src="$withBase('/kind-logo.png')" style="max-width: 65px;">
+      </a>
+    </div>
+    <div class="m-supporters__item">
+      <a target="_blank" href="https://www.liip.ch/">
+        <img :src="$withBase('/liip-logo.png')" style="max-width: 70px;">
       </a>
     </div>
   </div>
