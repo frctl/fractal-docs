@@ -52,24 +52,24 @@ footer: MIT Licensed | A Community Driven Project
   <p>Supported by</p>
 
   <div class="m-supporters__grid">
-    <div class="m-supporters__item">
+    <div class="m-supporters__item" style="max-width: 70px;">
       <a target="_blank" href="https://slab.com/">
-        <img :src="$withBase('/slab-logo.png')" style="max-width: 70px; min-width: 70px; width: 70px;">
+        <img :src="$withBase('/slab-logo.png')" style="max-width: 70px;">
       </a>
     </div>
-    <div class="m-supporters__item">
+    <div class="m-supporters__item" style="max-width: 90px;">
       <a target="_blank" href="https://clearleft.com/">
-        <img :src="$withBase('/clearleft-logo.png')" style="max-width: 90px; min-width: 90px; width: 90px;">
+        <img :src="$withBase('/clearleft-logo.png')" style="max-width: 90px;">
       </a>
     </div>
-    <div class="m-supporters__item">
+    <div class="m-supporters__item" style="max-width: 65px;">
       <a target="_blank" href="https://madebykind.com/">
-        <img :src="$withBase('/kind-logo.png')" style="max-width: 65px; min-width: 65px; width: 65px;">
+        <img :src="$withBase('/kind-logo.png')" style="max-width: 65px;">
       </a>
     </div>
-    <div class="m-supporters__item">
+    <div class="m-supporters__item" style="max-width: 70px;">
       <a target="_blank" href="https://www.liip.ch/">
-        <img :src="$withBase('/liip-logo.png')" style="max-width: 70px; min-width: 70px; width: 70px;">
+        <img :src="$withBase('/liip-logo.png')" style="max-width: 70px;">
       </a>
     </div>
   </div>
