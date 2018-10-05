@@ -13,10 +13,10 @@ module.exports = {
     repoLabel: 'Github',
     editLinks: true,
     editLinkText: 'Help us improve this page!',
-    algolia: {
-      apiKey: '514014891767c249c3ca94ade449c631',
-      indexName: 'fractal'
-    },
+    // algolia: {
+    //   apiKey: '514014891767c249c3ca94ade449c631',
+    //   indexName: 'fractal'
+    // },
     nav: [
       { text: 'Guide', link: '/guide/' },
       { text: 'API', link: '/api/' }
