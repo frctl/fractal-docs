@@ -2,4 +2,4 @@
 https://fractal-docs.netlify.com/* https://fractal.build/:splat 301!
 
 # Rules for changed urls
-/build-tools/* /build-tools.html/:splat 301!
+/guide/integration/build-tools/* /guide/integration/build-tools.html/:splat 301!
