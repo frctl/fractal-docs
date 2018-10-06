@@ -105,6 +105,8 @@ https://fractal-docs.netlify.com/* https://fractal.build/:splat 301!
 /guide/integration/integrating-into-production /guide/integration/integrating-into-production.html 301
 /guide/integration/integrating-into-production/* /guide/integration/integrating-into-production.html/:splat 301 
 
+/guide/core-concepts/views/ guide/core-concepts/view-templates.html 301
+/guide/core-concepts/views/* /guide/core-concepts/views-templates.html/:splat 301
 
 # API Rules
 
