@@ -108,14 +108,14 @@ https://fractal-docs.netlify.com/* https://fractal.build/:splat 301!
 /guide/core-concepts/views /guide/core-concepts/view-templates.html 301
 /guide/core-concepts/views/* /guide/core-concepts/views-templates.html/:splat 301
 
-/guide/integration/including guide/integration/including-as-dependency.html 301
-/guide/integration/including/* guide/integration/including-as-dependency.html/:splat 301
+/guide/integration/including /guide/integration/including-as-dependency.html 301
+/guide/integration/including/* /guide/integration/including-as-dependency.html/:splat 301
 
 /guide/components/creating /guide/components/creating-a-component.html 301
 /guide/components/creating/* /guide/components/creating-a-component.html/:splat 301
 
 /guide/docs/dynamic /guide/documentation/dynamic-docs.html 301
-/guide/docs/dynamic/* /guide/documentation/dynamic-documentation.html 301
+/guide/docs/dynamic/* /guide/documentation/dynamic-documentation.html/:splat 301
 
 # API Rules
 
