@@ -135,8 +135,8 @@ https://fractal-docs.netlify.com/* https://fractal.build/:splat 301!
 /guide/cli/commands/ /guide/cli/commands-reference.html 301
 /guide/cli/commands/* /guide/cli/commands-reference.html/:splat 301
 
-/guide/collections/configuration/ guide/collections/configuration-reference.html 301
-/guide/collections/configuration/* guide/collections/configuration-reference.html/:splat 301
+/guide/collections/configuration/ /guide/collections/configuration-reference.html 301
+/guide/collections/configuration/* /guide/collections/configuration-reference.html/:splat 301
 
 /guide/web/builder/ /guide/web/configuration-reference.html 301
 /guide/web/builder/* /guide/web/configuration-reference.html/:splat 301
