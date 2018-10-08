@@ -117,41 +117,41 @@ https://fractal-docs.netlify.com/* https://fractal.build/:splat 301!
 /guide/docs/dynamic /guide/documentation/dynamic-docs.html 301
 /guide/docs/dynamic/* /guide/documentation/dynamic-documentation.html/:splat 301
 
-/guide/web/server/ /guide/web/development-server.html 301
+/guide/web/server /guide/web/development-server.html 301
 /guide/web/server/* /guide/web/development-server.html/:splat 301
 
-/guide/components/configuration/ /guide/components/configuration-reference.html 301
+/guide/components/configuration /guide/components/configuration-reference.html 301
 /guide/components/configuration/* /guide/components/configuration-reference.html/:splat 301
 
-/guide/docs/ /guide/documentation.html 301
+/guide/docs /guide/documentation.html 301
 /guide/docs/* /guide/documentation.html/:splat 301
 
-/guide/integration/production/ /guide/integration/integrating-into-production.html 301
+/guide/integration/production /guide/integration/integrating-into-production.html 301
 /guide/integration/production/* /guide/integration/integrating-into-production.html/:splat 301
 
-/guide/cli/interactive/ /guide/cli/interactive-mode.html 301
+/guide/cli/interactive /guide/cli/interactive-mode.html 301
 /guide/cli/interactive/* /guide/cli/interactive-mode.html/:splat 301
 
-/guide/cli/commands/ /guide/cli/commands-reference.html 301
+/guide/cli/commands /guide/cli/commands-reference.html 301
 /guide/cli/commands/* /guide/cli/commands-reference.html/:splat 301
 
-/guide/collections/configuration/ /guide/collections/configuration-reference.html 301
+/guide/collections/configuration /guide/collections/configuration-reference.html 301
 /guide/collections/configuration/* /guide/collections/configuration-reference.html/:splat 301
 
-/guide/web/builder/ /guide/web/configuration-reference.html 301
+/guide/web/builder /guide/web/configuration-reference.html 301
 /guide/web/builder/* /guide/web/configuration-reference.html/:splat 301
 
-/guide/web/configuration/ /guide/web/configuration-reference.html 301
+/guide/web/configuration /guide/web/configuration-reference.html 301
 /guide/web/configuration/* /guide/web/configuration-reference.html/:splat 301
 
-/guide/docs/configuration/ /guide/documenation/configuration-reference.html 301
+/guide/docs/configuration /guide/documenation/configuration-reference.html 301
 /guide/docs/configuration/* /guide/documenation/configuration-reference.html/:splat 301
 
-/guide/components/sub-components/ /guide/components/including-sub-components.html 301
+/guide/components/sub-components /guide/components/including-sub-components.html 301
 /guide/components/sub-components/* /guide/components/including-sub-components.html/:splat 301
 
 
-/guide/cli/custom-commands/ /guide/cli/custom-commands.html 301
+/guide/cli/custom-commands /guide/cli/custom-commands.html 301
 /guide/cli/custom-commands/* /guide/cli/custom-commands.html/:splat 301
 
 # API Rules
@@ -193,14 +193,14 @@ https://fractal-docs.netlify.com/* https://fractal.build/:splat 301!
 /api/entities/adapter /api/entities/adapter.html 301
 /api/entities/adapter/* /api/entities/adapter.html/:splat 301
 
-/api/endpoints/cli/ /api/endpoints/fractal-cli.html 301
+/api/endpoints/cli /api/endpoints/fractal-cli.html 301
 /api/endpoints/cli/* /api/endpoints/fractal-cli.html/:splat 301
 
-/api/endpoints/web/ /api/endpoints/fractal-web.html 301
+/api/endpoints/web /api/endpoints/fractal-web.html 301
 /api/endpoints/web/* /api/endpoints/fractal-web.html/:splat 301
 
-/api/endpoints/docs/ /api/endpoints/fractal-docs.html 301
+/api/endpoints/docs /api/endpoints/fractal-docs.html 301
 /api/endpoints/docs/* /api/endpoints/fractal-docs.html/:splat 301
 
-/api/endpoints/components/ /api/endpoints/fractal-components.html 301
+/api/endpoints/components /api/endpoints/fractal-components.html 301
 /api/endpoints/components/* /api/endpoints/fractal-components.html/:splat 301
