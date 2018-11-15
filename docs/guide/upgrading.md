@@ -2,11 +2,11 @@
 title: Upgrading
 ---
 
-# Upgrade Guide 
+# Upgrade Guide
 
 ## Upgrading from a pre-1.0 version
 
-If you are have been using a pre-1.0 version of Fractal, you will need to update both the local Fractal version in your project dependencies **and** your Fractal CLI tool version.
+If you have been using a pre-1.0 version of Fractal, you will need to update both the local Fractal version in your project dependencies **and** your Fractal CLI tool version.
 
 ### CLI tool
 

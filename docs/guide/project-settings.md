@@ -10,7 +10,7 @@ Fractal comes with a few sensible defaults, but before you can get your project 
 
 ## The fractal.js file
 
-By convention, project configuration and setup information should be kept in file called `fractal.js` that lives in the **root of your project directory**.
+By convention, project configuration and setup information should be kept in a file called `fractal.js` that lives in the **root of your project directory**.
 
 If you are using the Fractal [CLI tool](./cli) this file will need to exist (and be set up correctly) before you can run commands on your project.
 
@@ -24,7 +24,7 @@ This will make your Fractal installation more portable (and more robust for any 
 
 ### Creating and exporting a new Fractal instance
 
-At a bare minimum, your fractal.js file must `require` the Fractal module, create a new instance and then export it (so that other tools such as the CLI tool can make use of it). In the example below we are doing all this in a handy one-liner:
+At a bare minimum, your `fractal.js` file must `require` the Fractal module, create a new instance and then export it (so that other tools such as the CLI tool can make use of it). In the example below we are doing all this in a handy one-liner:
 
 ```js
 'use strict';
