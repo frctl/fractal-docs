@@ -83,13 +83,13 @@ Because the locally-installed Fractal module also includes the [CLI tool](../cli
 
 An example `package.json` file may therefore look like this:
 
-```
+```json
 {
   "name": "foocorp-component-library",
   "version": "1.0.0",
   "description": "FooCorp Component Library.",
   "devDependencies": {
-    "@frctl/fractal": "^{{ _config.project.version }}",
+    "@frctl/fractal": "…",
   },
   "scripts": {
     "start": "fractal start --sync",
