@@ -178,7 +178,7 @@ context:
 The name of the variant that should be used as the default variant. Defaults to `default`.
 
 ```yaml
-context: primary
+default: primary
 ```
 
 ### display
