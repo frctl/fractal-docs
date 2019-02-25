@@ -2,7 +2,7 @@
 title: Context Data
 ---
 
-# Context Data 
+# Context Data
 
 Context data is data that is made available to your [view templates](./configuration-files.html) when they are rendered.
 
@@ -154,7 +154,7 @@ The reference syntax only applies to items of **the same type** - a component ca
 
  If you already have an API for your site or application, and you want to preview your components using 'real' data (or indeed if you want to use content from any other APIs) then you can handle that in your component configuration files too.
 
- The key to this is that if any values in the context data are [Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise), Fractal will first wait for those promises to be resolved before rendering the template using the context data. So we can use a Promise-based request module (such as [request-promise](https://github.com/request/request-promise)) to make API requests and then just pass the returned promise into our context data object.
+ The key to this is that if any values in the context data are [Promises](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise), Fractal will first wait for those promises to be resolved before rendering the template using the context data. So we can use a Promise-based request module (such as [request-promise-native](https://github.com/request/request-promise-native)) to make API requests and then just pass the returned promise into our context data object.
 
  In the following example, we are going to make a request to our fictional members API endpoint, which returns a JSON-encoded list of members.
 
@@ -162,7 +162,7 @@ The reference syntax only applies to items of **the same type** - a component ca
  // member-list.config.js
  'use strict';
 
- const request = require('request-promise'); // require the request-promise module
+ const request = require('request-promise-native'); // require the request-promise-native module
 
  // make the request to the API, returns a Promise
  const response = request({
