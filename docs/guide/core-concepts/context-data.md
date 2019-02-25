@@ -164,7 +164,7 @@ In the following example, we are going to make a request to our fictional member
 // member-list.config.js
 "use strict";
 
-const request = require("request-promise-native"); // require the request-promise module
+const request = require("request-promise-native"); // require the request-promise-native module
 
 // make the request to the API, returns a Promise
 const response = request({
