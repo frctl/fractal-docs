@@ -45,7 +45,7 @@ The above example wouldn't give us anything very interesting, so let's look at h
 <!-- notification.hbs -->
 <div class="notification notification--{{ modifier }}">
     <p class="notification-message">{{ message }}</p>
-    <a class="notification-close" href="#">{{ closeButtonText }}</a>>
+    <a class="notification-close" href="#">{{ closeButtonText }}</a>
 </div>
 ```
 
@@ -59,14 +59,14 @@ We can define the required variants in the component config file like this:
 	"context": {
 		"modifier": "default",
 		"closeButtonText": "close",
-		"text": "This is the default banner"
+		"message": "This is the default banner"
 	},
 	"variants": [
 		{
 			"name": "warning",
             "context": {
         	    "modifier": "alert",
-                "text": "This is a warning banner"
+                "message": "This is a warning banner"
         	}
 		},
 		{
@@ -74,7 +74,7 @@ We can define the required variants in the component config file like this:
             "status": "prototype",
             "context": {
         	    "modifier": "success",
-                "text": "This is a success banner"
+                "message": "This is a success banner"
         	}
 		}
 	]
