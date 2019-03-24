@@ -90,7 +90,7 @@ Components can be very simple, consisting of just a single view template file, o
 1. Create a view file within there called `<component-name>.hbs` (The `.hbs` extension is the extension for Handlebars templates, the view template engine that Fractal uses by default);
 1. Add a configuration file that contains some context data that we want to use to render the view template with. -->
 
-Obviously this isn't a very exciting component at this point, but there is [plenty more you can do](./components) once you've got to grips with the basics.
+Obviously this isn't a very exciting component at this point, but there is [plenty more you can do](./components/) once you've got to grips with the basics.
 
 ### 4. Add a documentation index page
 
@@ -125,4 +125,4 @@ Once it has booted up you should see something like this in your terminal window
 
 If so, visit the 'Local URL' (It should be something like [http://localhost:3000](http://localhost:3000)) and have a look at your component library's web UI.
 
-The [web UI docs](./web) has full details on the options available when starting up development servers, as well as information on how to run static HTML exports of your component library UI and more.
+The [web UI docs](./web/) has full details on the options available when starting up development servers, as well as information on how to run static HTML exports of your component library UI and more.

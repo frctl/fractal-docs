@@ -111,7 +111,7 @@ This option can also take an **array** of stylesheets URLs to use. If you do not
 In this case the default Mandelbrot stylesheet link will be output between the two other custom styleheets.
 
 ::: warning
-This option **is not used** for applying styles to your _components_ - for information on how to include component stylesheets see the docs on linking to [static assets](../web#static-assets).
+This option **is not used** for applying styles to your _components_ - for information on how to include component stylesheets see the docs on linking to [static assets](../web/#static-assets).
 :::
 
 ### scripts
@@ -140,7 +140,7 @@ This option can also take an **array** of JavaScript file URLs to use. If you do
 In this case the default Mandelbrot script tag link will be output between the two other custom script sources.
 
 ::: warning
-This option **is not used** for applying JavaScript to your _components_ - for information on how to include component JS files see the docs on linking to [static assets](../web#static-assets).
+This option **is not used** for applying JavaScript to your _components_ - for information on how to include component JS files see the docs on linking to [static assets](../web/#static-assets).
 :::
 
 

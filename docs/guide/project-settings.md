@@ -12,7 +12,7 @@ Fractal comes with a few sensible defaults, but before you can get your project 
 
 By convention, project configuration and setup information should be kept in a file called `fractal.js` that lives in the **root of your project directory**.
 
-If you are using the Fractal [CLI tool](./cli) this file will need to exist (and be set up correctly) before you can run commands on your project.
+If you are using the Fractal [CLI tool](./cli/) this file will need to exist (and be set up correctly) before you can run commands on your project.
 
 ::: tip A note on paths
 When setting paths to directories in your Fractal configuration, it's possible to specify them relative to the root of your project directory - i.e. `src/components`. However it's recommended that you instead make use of Node's [`\__dirname`](https://nodejs.org/docs/latest/api/globals.html#globals_dirname) global to generate full absolute paths that look like:
@@ -52,7 +52,7 @@ Apart from the `project.title` value, Fractal will not use any of these other va
 
 Component configuration is done using the [`fractal.components.set()`](../api/endpoints/fractal-components.html#set-path-value) method.
 
-To specify the directory that your [components](./components) will be created in, you can use the `path` setting:
+To specify the directory that your [components](./components/) will be created in, you can use the `path` setting:
 
 ```js
 fractal.components.set('path', __dirname + '/src/components');
@@ -65,7 +65,7 @@ The [components configuration reference](./components/configuration-reference.md
 
 Docs configuration is done using the [`fractal.docs.set()`](../api/endpoints/fractal-docs.html#set-path-value) method.
 
-To specify the directory that your [documentation pages](./documentation) will reside in, you can use the `path` setting:
+To specify the directory that your [documentation pages](./documentation/) will reside in, you can use the `path` setting:
 
 ```js
 fractal.docs.set('path', __dirname + '/src/docs');
