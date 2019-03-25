@@ -28,4 +28,4 @@ To install the Fractal CLI tool, run the following command from your terminal:
 npm i -g @frctl/fractal
 ```
 
-You can then run tasks using the `fractal <task-name>` format from your terminal - see the [CLI tool documentation](./cli) for full details.
+You can then run tasks using the `fractal <task-name>` format from your terminal - see the [CLI tool documentation](./cli/) for full details.
