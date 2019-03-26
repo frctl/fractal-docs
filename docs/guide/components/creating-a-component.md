@@ -21,7 +21,7 @@ All examples in this documentation will assume that you are using `/components` 
 
 The most basic component just consists of a single markup (view) file with the appropriate file extension (i.e. `.hbs`) for the template engine you are using.
 
-As an example, let's create a simple blockquote component. To do this, we'll create a file called `blockquote.hbs` at the top level of our components directory. So our component directory fike tree will look something like this:
+As an example, let's create a simple blockquote component. To do this, we'll create a file called `blockquote.hbs` at the top level of our components directory. So our component directory file tree will look something like this:
 
 ```
 ├── components
