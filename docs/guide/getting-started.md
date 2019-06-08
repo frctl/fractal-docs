@@ -109,7 +109,14 @@ The Markdown file also contains some YAML front-matter to specify a title for th
 
 Now all that's left to do is to fire up the development server and have a look at your component library.
 
-Open up your terminal, make sure you are in the root of your project directory and use the following command to start the server:
+#### 5.1 Open your packages.json file and under scripts, add the following
+  "start": "fractal start --sync" 
+This will make sure when you run the command is 5.2, it start otherwise if you miss this step you will get error in terminal saying
+```bash
+bash: fractal: command not found
+```
+
+#### 5.2 Open up your terminal, make sure you are in the root of your project directory and use the following command to start the server:
 
 ```bash
 fractal start --sync
