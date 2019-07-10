@@ -96,7 +96,7 @@ fractal.web.set('static.path', __dirname + '/public');
 Virtual path prefix for the files that are served from the static asset directory specified in the `static.path` option. See the [static assets](../web/#static-assets) documentation for more details.
 
 ```js
-fractal.web.set('static.path', 'project-assets');
+fractal.web.set('static.mount', 'project-assets');
 // public/bar/foo.css will be served at http://localhost:3000/project-assets/bar/foo.css
 ```
 
