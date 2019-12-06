@@ -52,7 +52,7 @@ Returns a new collection that is the result of filtering the old collection usin
 
 ```js
 const hiddenItems = collection.filter('isHidden', true);
-const taggedWithFoo = collection.filter(function(){
+const taggedWithFoo = collection.filter(function(item){
     return item.tags.includes('foo');
 });
 ```
