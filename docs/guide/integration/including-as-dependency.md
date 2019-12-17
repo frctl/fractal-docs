@@ -47,12 +47,14 @@ For example, a [bespoke Fractal CLI task](../cli/custom-commands.html) for **opt
 // setup/import etc...
 
 const fs = require('fs');
+const path = require('path');
 
 /*
  * Fractal export command.
  *
  * Exports all view templates into a directory in the root of the project.
  * Templates are exported in a flat structure with the filenames in the format of {handle}.{ext}
+ * Requires either an output directory that exists, or uses `exported` if it exists
  *
  * Any @handle references in the templates (for partial includes etc) are re-written
  * to reference the appropriate template path.
