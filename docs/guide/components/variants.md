@@ -188,6 +188,6 @@ It's worth noting that if you include a variant as a partial within another comp
 
 Variants are generally exposed in UIs (such as the web UI) as individual items under the main component. In some cases you may want to render the component as a *collated component*, in which case it will instead appear as a single component with a preview that concatenates all the variant previews together into a single view.
 
-This can useful for when you have many variations of a small component such as a button and want to preview them all together, rather than having to flick between previews of each one individually.
+This can be useful for when you have many variations of a small component such as a button and want to preview them all together, rather than having to flick between previews of each one individually.
 
 To render a component in this way you need to set the `collated` property to `true` in the [component configuration file](../components/configuration-reference.html#component-properties).
