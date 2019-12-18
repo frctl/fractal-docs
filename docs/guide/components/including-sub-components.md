@@ -32,6 +32,33 @@ It's important to note that the syntax for including one component's view templa
 </div>
 ```
 
+## Container Components via @partial-block
+
+Apart from naming the subcomponent you'd want to include directly, you can also use handlebar's built in `@partial-block` to be able to wrap components inside container components. This is useful for creating preview templates where you want to be able to view a component variation inside a container component. 
+
+```handlebars
+<!-- container.hbs -->
+<div class="container">
+  {{> @partial-block}}
+</div>
+```
+
+Then you can use it like so:
+
+```handlebars
+{{#> container}}
+  {{> anotherPartial}}
+{{/container}}
+```
+
+Or even in a preview template:
+
+```handlebars
+{{#> container}}
+  {{ yield }}
+{{/container}}
+```
+
 ## Providing context data to sub-components
 
 When you include a sub-component in the manner described above, it's important to note that you are effectively just including the contents sub-component's view file. **It will not automatically include any [context data](../core-concepts/context-data.html) that you may have defined for that sub-component.**
