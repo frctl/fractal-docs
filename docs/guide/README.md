@@ -9,7 +9,7 @@ As you may be aware, there have recently been some changes in Fractal's core tea
 
 In order to safeguard its future, we decided to ask our community for help, and the response has been overwhelming. **We've received so many offers of support in all forms that we can safely say that development will be starting up again shortly. Thank you all!**
 
-We have an active and helpful community on [Fractal's Slack workspace](https://slack.fractal.build/) - join us there for support and tips.
+We have an active and helpful community on [Fractal's Discord server](https://discord.gg/vuRz4Yx) - join us there for support and tips.
 
 Please see [issue #449](https://github.com/frctl/fractal/issues/449) ('An update on Fractal's future development') for more details about how we are planning on moving Fractal forwards in the future.
 
