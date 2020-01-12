@@ -19,6 +19,7 @@ module.exports = {
     nav: [
       { text: 'Guide', link: '/guide/' },
       { text: 'API', link: '/api/' },
+      { text: 'Chat', link: 'https://discord.gg/vuRz4Yx' },
       { text: 'Github', link: 'https://github.com/frctl/fractal' }
     ],
     sidebar: {
