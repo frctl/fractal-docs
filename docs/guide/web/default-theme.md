@@ -178,6 +178,18 @@ Virtual path prefix for the theme's static assets. The value of this is prepende
 
 * **Default:** `_theme`
 
+### favicon
+
+The favicon file to be displayed by browsers.
+
+```js
+{
+    "favicon": "/custom/path/to/favicon.ico"
+}
+```
+
+* **Default:** it will look for a file named `favicon.ico` in the folder defined as the `static.mount` option described above.
+
 ## Template customisation
 
 Mandelbrot (as with all themes) uses [Nunjucks](http://mozilla.github.io/nunjucks/) templates to generate its HTML. The source code for these templates can be seen in the `views` directory of the [Mandelbrot repository](https://github.com/frctl/mandelbrot/tree/master/views).
@@ -190,7 +202,7 @@ const myCustomisedTheme = require('@frctl/mandelbrot')({
 });
 
 // specify a directory to hold the theme override templates
-myCustomisedTheme.addLoadPath(__dirname + '/theme-overrides');  
+myCustomisedTheme.addLoadPath(__dirname + '/theme-overrides');
 
 fractal.web.theme(myCustomisedTheme);
 ```
