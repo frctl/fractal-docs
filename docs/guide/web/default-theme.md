@@ -143,6 +143,15 @@ In this case the default Mandelbrot script tag link will be output between the t
 This option **is not used** for applying JavaScript to your _components_ - for information on how to include component JS files see the docs on linking to [static assets](../web/#static-assets).
 :::
 
+### favicon
+
+Specify the URL of an image to use as the favicon.
+
+```js
+{
+    "favicon": "/images/favicon.png" // defaults to `/${config.static.mount}/favicon.ico`
+}
+```
 
 ### lang
 
