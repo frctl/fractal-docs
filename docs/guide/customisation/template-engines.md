@@ -62,11 +62,12 @@ Configuration details can vary between adapters, so you should refer to your cho
 
 ## Available adapters
 
-Currently there are specific 'official' adapters implemented for Handlebars, [Mustache](https://github.com/frctl/mustache) and [Nunjucks](https://github.com/frctl/nunjucks). However, if you want to use something else, there is also a [generic adapter](https://github.com/frctl/consolidate) that uses the Consolidate.js library to provide compatibility with 30+ other template engines.
+Currently there are specific 'official' adapters implemented for Handlebars, [Mustache](https://github.com/frctl/mustache), [Nunjucks](https://github.com/frctl/nunjucks) and [Twig](https://github.com/frctl/twig). However, if you want to use something else, there is also a [generic adapter](https://github.com/frctl/consolidate) that uses the Consolidate.js library to provide compatibility with 30+ other template engines.
 
 For full information on installing, using and customising individual template engine adapters, see the appropriate READMEs:
 
 * Handlebars adapter - see the [view templates](../core-concepts/view-templates.html) documentation
 * [Mustache adapter](https://github.com/frctl/mustache)
 * [Nunjucks adapter](https://github.com/frctl/nunjucks)
+* [Twig adapter](https://github.com/frctl/twig)
 * [Generic/consolidate adapter](https://github.com/frctl/consolidate)
