@@ -13,7 +13,7 @@ Custom commands are typically registered in your [project settings file](../proj
 An simple custom command to list all the components in the project, together with their status, is shown below. This would typically be registered in your [project settings file](../project-settings.html).
 
 ```js
-// fractal.js
+// fractal.config.js
 
 var config = {
     description: 'Lists components in the project'

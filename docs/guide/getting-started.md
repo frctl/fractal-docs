@@ -42,17 +42,21 @@ You can of course put anything else you like into your project directory - build
 
 You now need to create a new instance of Fractal, and set a few configuration options to tell it about the structure of your project and other information.
 
-The convention is to do this in a file named `fractal.js` in the root of your project directory:
+The convention is to do this in a file named `fractal.config.js` in the root of your project directory:
+
+::: tip
+Note that previously the config file was called `fractal.js` by default. This changed in v1.3.0.
+:::
 
 ```
 ├── src
 │   ├── components
 │   └── docs
-├── fractal.js
+├── fractal.config.js
 └── package.json
 ```
 
-A very simple `fractal.js` file should look something like this:
+A very simple `fractal.config.js` file should look something like this:
 
 ```javascript
 'use strict';
@@ -73,7 +77,7 @@ fractal.docs.set('path', __dirname + '/src/docs');
 
 A full list of project configuration options for the various parts of Fractal can be found within their dedicated documentations sections.
 
-<!-- > Unless configured otherwise, the `fractal.js` file is where the CLI tool will expect to find the project setup information. There are many other options for where this can live however, depending the needs of your project. -->
+<!-- > Unless configured otherwise, the `fractal.config.js` file is where the CLI tool will expect to find the project setup information. There are many other options for where this can live however, depending the needs of your project. -->
 
 ### 3. Create your first component
 

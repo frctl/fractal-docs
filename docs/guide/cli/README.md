@@ -14,10 +14,10 @@ The Fractal CLI tool can be installed globally via NPM:
 npm i -g @frctl/fractal
 ```
 
-To use the CLI tool with your Fractal project, you must first make sure you have a  [project settings file](../project-settings.html) (typically called `fractal.js`) in the root of your project directory. This file should export a configured Fractal instance. For example:
+To use the CLI tool with your Fractal project, you must first make sure you have a  [project settings file](../project-settings.html) (typically called `fractal.config.js`) in the root of your project directory. This file should export a configured Fractal instance. For example:
 
 ```javascript
-// fractal.js
+// fractal.config.js
 
 var fractal = require('@frctl/fractal').create();
 fractal.set('project.title', 'FooCorp Component Library');
@@ -25,10 +25,6 @@ fractal.components.set('path', __dirname + '/src/components');
 
 module.exports = fractal; // export the configured Fractal instance for use by the CLI tool.
 ```
-
-::: danger Note for Windows users
-On Windows, a conflicting command-line application prevents you from running Fractal commands from the project's root directory (where `fractal.js` is). To use the CLI, you can **run commands from a subdirectory** or **change the name of Fractal's configuration file**. (See [the github issue](https://github.com/frctl/fractal/issues/118#issuecomment-255254117) for more details.)
-:::
 
 ## Running commands
 
