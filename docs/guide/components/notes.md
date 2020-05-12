@@ -10,14 +10,20 @@ Whilst Fractal lets you create rich standalone [documentation pages](../document
 
 ## The README.md file
 
-[Compound components](../components/#compound-components) can include a `README.md` file within their component folder:
+[Components](../components/#components) and [variants](../component/#variants) can include notes in a markdown file (filename is case-insensitive), for example: `README.md`, `readme.md`, `<component-name>.readme.md`, or `<component-name>--<variant-name>.readme.md` file beside the component template file:
 
 ```
 ├── components
 │   ├── blockquote
 │   │   ├── blockquote.hbs
-│   │   └── README.md
+│   │   └── README.md # or readme.md
+|   ├── button.hbs
+|   ├── button.readme.md
+|   ├── button--primary.hbs
+|   ├── button--primary.readme.md   
 ```
+
+As noted above, for compound component `blockquote`, its `notes` can still be written in a `README.md` file.
 
 If present, the contents of the README file will be run through the **full Fractal documentation parser** before being displayed to the user in places such as the [web UI](../web/). That means that the file will be rendered with the documentation template engine (Handlebars by default) before being passed through a Markdown parser.
 
