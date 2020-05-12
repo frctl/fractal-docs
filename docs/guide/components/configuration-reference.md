@@ -76,6 +76,20 @@ The status to apply to all components unless overridden in a collection or compo
 fractal.components.set('default.status', 'wip'); // default is 'ready'
 ```
 
+### exclude
+
+Glob or array of globs that should be excluded by Fractal when parsing the [components directory](#path) for component view files.
+
+```js
+fractal.components.set('exclude', '**/node_modules/**');
+```
+
+or
+
+```js
+fractal.components.set('exclude', ['**/node_modules/**', '**/tests/**']);
+```
+
 ### ext
 
 The file extension that will be used for all component [view templates](../core-concepts/view-templates.html). Note that this must include the leading `.`
