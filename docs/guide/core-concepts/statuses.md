@@ -99,7 +99,7 @@ The default statuses are defined as follows:
 So as an example, if you only wanted two statuses for components, `doing` and `done`, you could use the following configuration:
 
 ```js
-// fractal.js
+// fractal.config.js
 fractal.components.set('statuses', {
     doing: {
         label: "Doing",

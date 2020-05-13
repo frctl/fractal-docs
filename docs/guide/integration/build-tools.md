@@ -98,4 +98,4 @@ An example `package.json` file may therefore look like this:
 }
 ```
 
-One thing to note here is that because you can't directly configure your Fractal instance within your `package.json` file, you will still need to have a `fractal.js` file [in your project root](../project-settings.html) to contain all your project setup information.
+One thing to note here is that because you can't directly configure your Fractal instance within your `package.json` file, you will still need to have a `fractal.config.js` file [in your project root](../project-settings.html) to contain all your project setup information.

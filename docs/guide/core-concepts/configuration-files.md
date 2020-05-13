@@ -111,7 +111,7 @@ Properties with primitive (i.e. non-object) values, if specified on a downstream
 
 1. Check if it is set directly in the component's configuration file. If so, use that.
 2. Otherwise, recursively work upwards to check any parent collections to see if any of them have a status set in its configuration. If one is found to have a `status` specified, stop and use that.
-3. If no value for the `status` is found, use the default value (which may or may not have been overridden in a `fractal.js` file or similar).
+3. If no value for the `status` is found, use the default value (which may or may not have been overridden in a `fractal.config.js` file or similar).
 
 ### Properties with object and array values
 
@@ -122,7 +122,7 @@ For example, if a collection has been assigned the tags `['sprint-1', 'dashboard
 Similarly, context data is inherited and merged from upstream sources. For example, the following example set of configuration data:
 
 ```js
-// in the fractal.js configuration file
+// in the fractal.config.js configuration file
 fractal.components.set('default.context', {
 	'background': 'sparkly'
 });

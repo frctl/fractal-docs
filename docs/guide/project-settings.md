@@ -8,9 +8,13 @@ Fractal is very flexible when it comes to things like project structure and orga
 
 Fractal comes with a few sensible defaults, but before you can get your project up and running you will generally need to provide some additional configuration information.
 
-## The fractal.js file
+## The fractal.config.js file
 
-By convention, project configuration and setup information should be kept in a file called `fractal.js` that lives in the **root of your project directory**.
+By convention, project configuration and setup information should be kept in a file called `fractal.config.js` that lives in the **root of your project directory**.
+
+::: tip
+Note that previously the config file was called `fractal.js` by default. This changed in v1.3.0.
+:::
 
 If you are using the Fractal [CLI tool](./cli/) this file will need to exist (and be set up correctly) before you can run commands on your project.
 
@@ -24,7 +28,7 @@ This will make your Fractal installation more portable (and more robust for any 
 
 ### Creating and exporting a new Fractal instance
 
-At a bare minimum, your `fractal.js` file must `require` the Fractal module, create a new instance and then export it (so that other tools such as the CLI tool can make use of it). In the example below we are doing all this in a handy one-liner:
+At a bare minimum, your `fractal.config.js` file must `require` the Fractal module, create a new instance and then export it (so that other tools such as the CLI tool can make use of it). In the example below we are doing all this in a handy one-liner:
 
 ```js
 'use strict';
@@ -93,7 +97,7 @@ The [web UI configuration reference](./web/configuration-reference.html) contain
 
 ## Example project setup file
 
-Tying together the examples above, we can see that a basic `fractal.js` file might look something like this:
+Tying together the examples above, we can see that a basic `fractal.config.js` file might look something like this:
 
 ```js
 'use strict';
@@ -119,6 +123,6 @@ fractal.web.set('builder.dest', __dirname + '/build');
 ```
 
 
-<!-- ## Alternatives to using a fractal.js file for configuration
+<!-- ## Alternatives to using a fractal.config.js file for configuration
 
-Whilst the standard fractal.js file works just fine, it's far from the only option. -->
+Whilst the standard fractal.config.js file works just fine, it's far from the only option. -->

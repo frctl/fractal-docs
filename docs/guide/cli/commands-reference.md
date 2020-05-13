@@ -49,7 +49,7 @@ The default installation of Fractal CLI tool provides one **global** command. No
 
 ### new
 
-Create a new Fractal project skeleton. Sets up the basic file structure (including creating a basic `fractal.js` project settings file) for you.
+Create a new Fractal project skeleton. Sets up the basic file structure (including creating a basic `fractal.config.js` project settings file) for you.
 
 ```bash
 fractal new <directory-name>

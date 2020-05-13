@@ -45,7 +45,7 @@ const myCustomisedTheme = require('@frctl/mandelbrot')({
 });
 
 // specify a directory to hold the theme override templates
-myCustomisedTheme.addLoadPath(__dirname + '/theme-overrides');  
+myCustomisedTheme.addLoadPath(__dirname + '/theme-overrides');
 
 fractal.web.theme(myCustomisedTheme);
 ```
@@ -143,7 +143,7 @@ npm install git+ssh://git@github.com/<repo-owner>/<repo>.git
 Then in the [setup file](../project-settings.html) for each of your projects you can `require` and use your subclassed theme:
 
 ```js
-// fractal.js
+// fractal.config.js
 'use strict';
 
 const fractal    = module.exports = require('@frctl/fractal').create();

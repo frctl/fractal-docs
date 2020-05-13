@@ -10,9 +10,9 @@ If you want to include your Fractal component library as a dependency in another
 
 To set up your library for publishing, you will need to:
 
-1. Make sure that the [paths in your `fractal.js`](../project-settings.html) are full contextual paths (i.e. making use of the Node `__dirname` global)
+1. Make sure that the [paths in your `fractal.config.js`](../project-settings.html) are full contextual paths (i.e. making use of the Node `__dirname` global)
 2. Set a name for your component library in your `package.json` file - for instance `foocorp-component-library`.
-2. Set the value of the [main](https://docs.npmjs.com/files/package.json#main) field in your package.json to be `fractal.js`.
+2. Set the value of the [main](https://docs.npmjs.com/files/package.json#main) field in your package.json to be `fractal.config.js`.
 3. Either publish to NPM as a module or push to Github. Full details of publishing and consuming NPM modules is outside the scope of these docs but there are plenty of good tutorials on the web.
 
 ## 2. Include in your project
@@ -21,7 +21,7 @@ In the project that you want to include the fractal component library in:
 
 1. Install fractal: `npm i @frctl/fractal`
 2. Install your component library: `npm i foocorp-component-library`
-3. Create a `fractal.js` file in the root of your project that looks as follows:
+3. Create a `fractal.config.js` file in the root of your project that looks as follows:
 
 ```js
 const fractal = module.exports = require('foocorp-component-library');
