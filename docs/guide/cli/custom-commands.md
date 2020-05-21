@@ -10,7 +10,7 @@ Custom commands are typically registered in your [project settings file](../proj
 
 ## An example custom command
 
-An simple custom command to list all the components in the project, together with their status, is shown below. This would typically be registered in your [project settings file](../project-settings.html).
+A simple custom command to list all the components in the project, together with their status, is shown below. This would typically be registered in your [project settings file](../project-settings.html).
 
 ```js
 // fractal.config.js
