@@ -7,9 +7,9 @@ Built using [VuePress](https://vuepress.vuejs.org/).
 ## Running locally
 
 1. Download or clone this repo
-2. Install dependencies: `yarn`
-3. Start the development server: `yarn docs:dev`
-4. (optional) Build static files `yarn docs:build`
+2. Install dependencies: `npm ci`
+3. Start the development server: `npm run docs:dev`
+4. (optional) Build static files `npm run docs:build`
 
 ## Deployment
 http://fractal.build is hosted using [Netlify](https://www.netlify.com/). Deployment is triggered by pushing to the `master` branch
@@ -17,7 +17,7 @@ http://fractal.build is hosted using [Netlify](https://www.netlify.com/). Deploy
 This will essentially do the following:
 
 ```
-yarn docs:build
+npm run docs:build
 cd docs/.vuepress/dist
 ```
 
