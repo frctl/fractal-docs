@@ -7,7 +7,7 @@ Built using [VuePress](https://vuepress.vuejs.org/).
 ## Running locally
 
 1. Download or clone this repo
-2. Install dependencies: `npm install`
+2. Install dependencies: `npm ci`
 3. Start the development server: `npm run docs:dev`
 4. (optional) Build static files `npm run docs:build`
 
