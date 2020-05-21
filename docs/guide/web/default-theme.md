@@ -114,6 +114,19 @@ In this case the default Mandelbrot stylesheet link will be output between the t
 This option **is not used** for applying styles to your _components_ - for information on how to include component stylesheets see the docs on linking to [static assets](../web/#static-assets).
 :::
 
+### highlightStyles
+Works similarly to the previous `styles` option, but only affects code blocks highlighted by [highlight.js](https://highlightjs.org/).
+
+```js
+{
+    "highlightStyles": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/atom-one-dark.min.css"
+}
+```
+
+- **Default:** `'default'`
+- **Added in:** `@frctl/mandelbrot@v1.4.0`
+- **Required core version:** `@frctl/fractal@v1.3.0`
+
 ### scripts
 
 URL for the JavaScript file to use in the Mandelbrot UI. If none is specified then the default Mandelbrot JS file will be used instead.
