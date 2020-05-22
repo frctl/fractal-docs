@@ -119,7 +119,7 @@ Works similarly to the previous `styles` option, but only affects code blocks hi
 
 ```js
 {
-    "highlightStyles": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.0/styles/atom-one-dark.min.css"
+    "highlightStyles": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai.min.css"
 }
 ```
 
