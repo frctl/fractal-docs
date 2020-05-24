@@ -293,6 +293,15 @@ An array of tags to add to the component. Can be used by plugins and tasks to fi
 tags: ['sprint-1', 'foobar']
 ```
 
+### meta
+
+An object of arbitrary custom metadata that can be used for whatever you need. For example, the example below is accessible in a [preview layout](./preview-layouts.html) via `_target.meta.prop`.
+
+```yaml
+meta:
+  prop: value
+```
+
 ### variants
 
 An array of variant configuration objects. See the variant properties options (below) and the [variants documentation](./variants.html) for more information on working with variants.
@@ -454,33 +463,48 @@ An array of tags to add to all child components. Will be merged together with an
 tags: ['sprint-1', 'foobar']
 ```
 
+### meta
+
+An object of arbitrary custom metadata that can be used for whatever you need. For example, the example below is accessible in a [preview layout](./preview-layouts.html) via `_target.meta.prop`.
+
+```yaml
+meta:
+  prop: value
+```
+
 ## Example component configuration file
 
 A fairly full-featured, JS-formatted example component config file may look something like this:
 
 ```js
 module.exports = {
-	title: "Amazing Mega Buttons",
-	status: "prototype",
-	tags: ['sprint-1', 'author:mark'],
-	preview: '@preview-layout',
-	context: {
-		"button-text": "Click me!",
-		"is-sparkly": true
-	},
-	variants: [{
-		name: 'large',
-		notes: 'Only use this when you need a really big button!',
-		context: {
-			modifier: 'is-large'
-		}
-	},{
-		name: 'warning',
-		status: 'wip',
-		context: {
-			modifier: 'is-warning',
-			button-text: 'Do not click'
-		}
-	}]
+  title: 'Amazing Mega Buttons',
+  status: 'prototype',
+  tags: ['sprint-1', 'author:mark'],
+  meta: {
+    addedIn: '1.0'
+  },
+  preview: '@preview-layout',
+  context: {
+    'button-text': 'Click me!',
+    'is-sparkly': true
+  },
+  variants: [{
+    name: 'large',
+    notes: 'Only use this when you need a really big button!',
+    context: {
+      modifier: 'is-large'
+    }
+  },{
+    name: 'warning',
+    status: 'wip',
+    meta: {
+      addedIn: '1.1'
+    },
+    context: {
+      modifier: 'is-warning',
+      'button-text': 'Do not click'
+    }
+  }]
 };
 ```
