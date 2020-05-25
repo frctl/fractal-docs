@@ -4,7 +4,7 @@ title: Default theme
 
 # Default theme - Mandelbrot
 
-[Mandelbrot](https://github.com/frctl/mandelbrot) is the name of the default web UI theme that ships with Fractal. A standard installation will look something like this:
+[Mandelbrot](https://github.com/frctl/fractal/tree/master/packages/mandelbrot) is the name of the default web UI theme that ships with Fractal. A standard installation will look something like this:
 
 <picture>
   <source :srcset="$withBase('/screenshot-demo-cl-large.png')" media="(min-width: 900px)">
@@ -205,7 +205,7 @@ The favicon file to be displayed by browsers.
 
 ## Template customisation
 
-Mandelbrot (as with all themes) uses [Nunjucks](http://mozilla.github.io/nunjucks/) templates to generate its HTML. The source code for these templates can be seen in the `views` directory of the [Mandelbrot repository](https://github.com/frctl/mandelbrot/tree/master/views).
+Mandelbrot (as with all themes) uses [Nunjucks](http://mozilla.github.io/nunjucks/) templates to generate its HTML. The source code for these templates can be seen in the `views` directory of the [Mandelbrot repository](https://github.com/frctl/fractal/tree/master/packages/mandelbrot/tree/master/views).
 
 To override the contents of any of Mandelbrot's templates you can specify a custom `views` directory within your own Fractal project using the `theme.addLoadPath()` method:
 
