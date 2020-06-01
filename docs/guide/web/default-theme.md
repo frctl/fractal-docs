@@ -205,7 +205,7 @@ The favicon file to be displayed by browsers.
 
 ## Template customisation
 
-Mandelbrot (as with all themes) uses [Nunjucks](http://mozilla.github.io/nunjucks/) templates to generate its HTML. The source code for these templates can be seen in the `views` directory of the [Mandelbrot repository](https://github.com/frctl/fractal/tree/master/packages/mandelbrot/tree/master/views).
+Mandelbrot (as with all themes) uses [Nunjucks](http://mozilla.github.io/nunjucks/) templates to generate its HTML. The source code for these templates can be seen in the `views` directory of the [Mandelbrot repository](https://github.com/frctl/fractal/tree/master/packages/mandelbrot/views).
 
 To override the contents of any of Mandelbrot's templates you can specify a custom `views` directory within your own Fractal project using the `theme.addLoadPath()` method:
 
