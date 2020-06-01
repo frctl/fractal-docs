@@ -4,18 +4,6 @@ title: Overview
 
 # Fractal User Guide
 
-::: warning Project update - please read
-As you may be aware, there have recently been some changes in Fractal's core team.
-
-In order to safeguard its future, we decided to ask our community for help, and the response has been overwhelming. **We've received so many offers of support in all forms that we can safely say that development will be starting up again shortly. Thank you all!**
-
-We have an active and helpful community on [Fractal's Discord server](https://discord.gg/vuRz4Yx) - join us there for support and tips.
-
-Please see [issue #449](https://github.com/frctl/fractal/issues/449) ('An update on Fractal's future development') for more details about how we are planning on moving Fractal forwards in the future.
-
-Currently the 1.x (master) branch is stable and is being used in many projects. Documentation for this version is available at [https://fractal.build](https://fractal.build). The 2.0 (beta) branch is _not_ recommended for use as there are many outstanding issues + bugs, limited documentation and may change _significantly_ once development begins again.
-:::
-
 Fractal is a tool to help you **build** and **document** web component libraries, and then **integrate** them into your projects.
 
 Component (or pattern) libraries are a way of designing and building websites in a modular fashion, breaking up the UI into small, reusable chunks that can then later be assembled in a variety of ways to build anything from larger components right up to whole pages.
@@ -25,16 +13,35 @@ Fractal helps you assemble, preview and document website component libraries, an
 Fractal can be run from the command line or integrated into your project via its API.
 
 <div style="margin-bottom: 15px;">
-<a style="margin-right: 8px;" target="_blank" href="https://www.npmjs.com/package/@frctl/fractal"><img src="https://img.shields.io/npm/v/@frctl/fractal.svg?style=flat-square" alt="NPM Badge"/></a>
-<a style="margin-right: 8px;" target="_blank" href="https://travis-ci.org/frctl/fractal"><img src="https://img.shields.io/travis/frctl/fractal/master.svg?style=flat-square" alt="Build Status Badge"/></a>
-<a style="margin-right: 8px;" target="_blank" href="http://github.com/frctl/fractal"><img src="https://img.shields.io/github/stars/frctl/fractal.svg?style=social&label=Star" alt="Github Badge"/></a>
+  <!-- Build -->
+  <a href="https://travis-ci.org/frctl/fractal" title="Continuous integration" style="margin-right: 8px">
+    <img src="https://img.shields.io/travis/frctl/fractal.svg?style=flat-square" alt="">
+  </a>
+  <!-- NPM Version -->
+  <a href="https://www.npmjs.com/package/@frctl/fractal" title="Current version" style="margin-right: 8px">
+    <img src="https://img.shields.io/npm/v/@frctl/fractal.svg?style=flat-square" alt="">
+  </a>
+  <!-- NPM Downloads -->
+  <a href="https://www.npmjs.com/package/@frctl/fractal" title="NPM monthly downloads" style="margin-right: 8px">
+    <img src="https://img.shields.io/npm/dm/@frctl/fractal.svg?style=flat-square" alt="">
+  </a>
+  <!-- Discord -->
+  <a href="https://www.npmjs.com/package/@frctl/fractal" title="Chat with us on Discord" style="margin-right: 8px">
+    <img src="https://img.shields.io/badge/discord-join-7289DA.svg?style=flat-square" alt="">
+  </a>
+  <!-- License -->
+  <a href="https://github.com/frctl/fractal/blob/master/LICENSE" title="MIT license" style="margin-right: 8px">
+    <img alt="GitHub" src="https://img.shields.io/github/license/frctl/fractal.svg?style=flat-square">
+  </a>
+  <!-- Github -->
+  <a href="http://github.com/frctl/fractal">
+    <img src="https://img.shields.io/github/stars/frctl/fractal.svg?style=social&label=Star" alt="Github Badge"/>
+  </a>
 </div>
 
 ## Requirements
 
-Fractal requires [Node.js](https://nodejs.org) v4.4.7+ to run.
-
-It is the intention that Fractal's Node.js version support will track the latest Node LTS release version.
+You'll need a [supported LTS version](https://github.com/nodejs/Release) of Node. Fractal may work on unsupported versions, but there is no active support from Fractal and new features may not be backwards compatible with EOL versions of Node.
 
 ## Why Fractal?
 
