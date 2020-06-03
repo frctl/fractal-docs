@@ -18,15 +18,17 @@ title: Default theme
 Mandelbrot offers some theme-specific configuration options. Configuration properties can be set when initialising a new instance of the theme:
 
 ```js
-const mandelbrot = require('@frctl/mandelbrot'); // require the Mandelbrot theme module
+// require the Mandelbrot theme module
+const mandelbrot = require('@frctl/mandelbrot');
 
 // create a new instance with custom config options
 const myCustomisedTheme = mandelbrot({
-    skin: "fuchsia"
+    skin: 'fuchsia',
     // any other theme configuration values here
 });
 
-fractal.web.theme(myCustomisedTheme); // tell Fractal to use the configured theme by default
+// tell Fractal to use the configured theme by default
+fractal.web.theme(myCustomisedTheme);
 ```
 
 ::: tip
@@ -39,7 +41,7 @@ Mandelbrot offers a pre-defined set of colour 'skins' that you can apply to the 
 
 ```js
 {
-    "skin": "lime"
+    skin: 'lime'
 }
 ```
 
@@ -52,7 +54,7 @@ The format to use when outputting context data.
 
 ```js
 {
-    "format": "yaml"
+    format: 'yaml'
 }
 ```
 
@@ -65,12 +67,12 @@ The nav sections that should show up in the sidebar (and in which order):
 
 ```js
 {
-    "nav": ["docs", "components"] // show docs above components in the sidebar
+    nav: ['docs', 'components'] // show docs above components in the sidebar
 }
 ```
 
 * **Possible values:** `docs`, `components`
-* **Default:** `["components", "docs"]`
+* **Default:** `['components', 'docs']`
 
 ### panels
 
@@ -78,12 +80,12 @@ The component info panels that should be displayed in the component browser (and
 
 ```js
 {
-    "panels": ["html", "view", "context", "resources", "info", "notes"]
+    panels: ['html', 'view', 'context', 'resources', 'info', 'notes']
 }
 ```
 
 * **Possible values:** `html`, `view`, `context`, `resources`, `info`, `notes`
-* **Default:** `["html", "view", "context", "resources", "info", "notes"]`
+* **Default:** `['html', 'view', 'context', 'resources', 'info', 'notes']`
 
 ### styles
 
@@ -91,19 +93,18 @@ The URL of a stylesheet to apply the to the UI. If none is specified then the ap
 
 ```js
 {
-    "styles": "http://mega-corp.com/css/custom-mandelbrot-stylesheet.css"
+    styles: 'http://mega-corp.com/css/custom-mandelbrot-stylesheet.css'
 }
 ```
 
 This option can also take an **array** of stylesheets URLs to use. If you do not wish to _replace_ the default stylesheet, but instead want to add an additional stylesheet before or after it, you can use the `default` placeholder value and Mandelbrot will expand that out into the correct URL before use. For example:
 
-
 ```js
 {
-    "styles": [
-        "http://mega-corp.com/css/custom-mandelbrot-stylesheet.css",
-        "default",
-        "/another/stylesheet.css"
+    styles: [
+        'http://mega-corp.com/css/custom-mandelbrot-stylesheet.css',
+        'default',
+        '/another/stylesheet.css'
     ]
 }
 ```
@@ -119,7 +120,7 @@ Works similarly to the previous `styles` option, but only affects code blocks hi
 
 ```js
 {
-    "highlightStyles": "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai.min.css"
+    highlightStyles: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/monokai.min.css'
 }
 ```
 
@@ -133,19 +134,18 @@ URL for the JavaScript file to use in the Mandelbrot UI. If none is specified th
 
 ```js
 {
-    "scripts": "http://mega-corp.com/js/custom-mandelbrot-scripts.js"
+    scripts: 'http://mega-corp.com/js/custom-mandelbrot-scripts.js'
 }
 ```
 
 This option can also take an **array** of JavaScript file URLs to use. If you do not wish to _replace_ the default JS, but instead want to add a additional scripts before or after it, you can use the `default` placeholder value and Mandelbrot will expand that out into the correct URL before use. For example:
 
-
 ```js
 {
-    "scripts": [
-        "http://mega-corp.com/js/custom-mandelbrot-scripts.js",
-        "default",
-        "/another/script.js"
+    scripts: [
+        'http://mega-corp.com/js/custom-mandelbrot-scripts.js',
+        'default',
+        '/another/script.js'
     ]
 }
 ```
@@ -156,16 +156,18 @@ In this case the default Mandelbrot script tag link will be output between the t
 This option **is not used** for applying JavaScript to your _components_ - for information on how to include component JS files see the docs on linking to [static assets](../web/#static-assets).
 :::
 
-
 ### lang
 
 Specify the value of the `lang` attribute that is applied to the `html` element.
 
 ```js
 {
-    "lang": "fr" // defaults to 'en'
+    lang: 'fr'
 }
 ```
+- **Default:** `'en'`
+
+To translate the interface, see [labels](#labels) below.
 
 ### rtl
 
@@ -173,9 +175,11 @@ Switch the theme into RTL mode.
 
 ```js
 {
-    "rtl": true  // defaults to false
+    rtl: true
 }
 ```
+
+- **Default:** `false`
 
 ### static.mount
 
@@ -183,8 +187,8 @@ Virtual path prefix for the theme's static assets. The value of this is prepende
 
 ```js
 {
-    "static": {
-        "mount": "no-clash", // Theme asset URLs would now look something like: '/no-clash/path/to/file.js'
+    static: {
+        mount: 'no-clash', // Theme asset URLs would now look something like: '/no-clash/path/to/file.js'
     }
 }
 ```
@@ -197,11 +201,42 @@ The favicon file to be displayed by browsers.
 
 ```js
 {
-    "favicon": "/custom/path/to/favicon.ico"
+    favicon: '/custom/path/to/favicon.ico'
 }
 ```
 
 * **Default:** it will look for a file named `favicon.ico` in the folder defined as the `static.mount` option described above.
+
+### labels
+
+Customize labels used in the templates, useful for translating the interface for example.
+
+```js
+{
+    labels: {
+        search: {
+            placeholder: 'Rechercher…',
+        },
+    },
+}
+```
+
+* **Default:**
+
+    ```js
+    {
+        info: 'Information',
+        builtOn: 'Built on',
+        search: {
+            label: 'Search',
+            placeholder: 'Search…',
+            clear: 'Clear search',
+        },
+        tree: {
+            collapse: 'Collapse tree',
+        },
+    }
+    ```
 
 ## Template customisation
 
