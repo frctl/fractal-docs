@@ -67,12 +67,17 @@ The nav sections that should show up in the sidebar (and in which order):
 
 ```js
 {
-    nav: ['docs', 'components'] // show docs above components in the sidebar
+    // show "docs" above "components" in the sidebar and hide "information"
+    nav: ['search', 'docs', 'components']
 }
 ```
 
-* **Possible values:** `docs`, `components`
-* **Default:** `['components', 'docs']`
+* **Possible values:**
+  * `docs`
+  * `components`
+  * `search` <Badge text="added in v1.3.0" type="tip" vertical="middle"/>
+  * `information` <Badge text="added in v1.3.0" type="tip" vertical="middle"/>
+* **Default:** `['search', 'components', 'docs', 'information']`
 
 ### panels
 
@@ -115,7 +120,7 @@ In this case the default Mandelbrot stylesheet link will be output between the t
 This option **is not used** for applying styles to your _components_ - for information on how to include component stylesheets see the docs on linking to [static assets](../web/#static-assets).
 :::
 
-### highlightStyles
+### highlightStyles <Badge text="added in v1.4.0" type="tip"/>
 Works similarly to the previous `styles` option, but only affects code blocks highlighted by [highlight.js](https://highlightjs.org/).
 
 ```js
@@ -125,7 +130,6 @@ Works similarly to the previous `styles` option, but only affects code blocks hi
 ```
 
 - **Default:** `'default'`
-- **Added in:** `@frctl/mandelbrot@v1.4.0`
 - **Required core version:** `@frctl/fractal@v1.3.0`
 
 ### scripts
