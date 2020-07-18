@@ -110,7 +110,7 @@ A component can be given an order by which to sort it with regards to its siblin
 ```
 ├── components
 │   ├── 01-blockquote.hbs
-│   ├── 01-link-list
+│   ├── 02-link-list
 │   │   └──link-list.hbs
 ```
 
