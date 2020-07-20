@@ -125,7 +125,7 @@ If you refresh the web preview UI in your browser again you should see that a va
 
 [Preview layouts](./preview-layouts.html) are templates that wrap your components to allow them to be rendered in the context of 'proper' HTML page. That means that you can include links to your CSS or JavaScript files just as you would in your site proper.
 
-Preview layouts are themselves components. That means you can use your actual site 'skeleton' component (if you have one), or you can create a separate one just for the purpose of wrapping your component previews. In this example, we we are going to do the latter and create a component called `_preview.hbs` in the root of our component directory, like so:
+Preview layouts are themselves components. That means you can use your actual site 'skeleton' component (if you have one), or you can create a separate one just for the purpose of wrapping your component previews. In this example, we are going to do the latter and create a component called `_preview.hbs` in the root of our component directory, like so:
 
 ```
 ├── components
