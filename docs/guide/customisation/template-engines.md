@@ -68,6 +68,6 @@ For full information on installing, using and customising individual template en
 
 * Handlebars adapter - see the [view templates](../core-concepts/view-templates.html) documentation
 * [Mustache adapter](https://github.com/frctl/mustache)
-* [Nunjucks adapter](https://github.com/frctl/fractal/tree/master/packages/nunjucks)
+* [Nunjucks adapter](https://github.com/frctl/fractal/tree/main/packages/nunjucks)
 * [Twig adapter](https://github.com/frctl/fractal/tree/master/packages/twig)
 * [Generic/consolidate adapter](https://github.com/frctl/consolidate)
