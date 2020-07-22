@@ -30,7 +30,7 @@ Fractal can be run from the command line or integrated into your project via its
     <img src="https://img.shields.io/badge/discord-join-7289DA.svg?style=flat-square" alt="">
   </a>
   <!-- License -->
-  <a href="https://github.com/frctl/fractal/blob/master/LICENSE" title="MIT license" style="margin-right: 8px">
+  <a href="https://github.com/frctl/fractal/blob/main/LICENSE" title="MIT license" style="margin-right: 8px">
     <img alt="GitHub" src="https://img.shields.io/github/license/frctl/fractal.svg?style=flat-square">
   </a>
   <!-- Github -->
