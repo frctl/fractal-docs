@@ -23,7 +23,7 @@ Using the default Handlebars template engine, that might look something like thi
 
 As you can see, the `search-box.hbs` component view file uses the standard [Handlebars partial include](http://handlebarsjs.com/#partials) syntax to include the button template, with one difference - instead of using a *path* to the template, it uses the [`@handle` syntax](../core-concepts/naming.html#referencing-other-items) to refer to the button component by its handle.
 
-It's important to note that the syntax for including one component's view template within another **will depend on which [template engine](../customisation/template-engines.html) you are using**. For instance, if you were using the [Nunjucks engine](https://github.com/frctl/fractal/tree/master/packages/nunjucks) you would instead use Nunjuck's `include` tag to include sub components. For example:
+It's important to note that the syntax for including one component's view template within another **will depend on which [template engine](../customisation/template-engines.html) you are using**. For instance, if you were using the [Nunjucks engine](https://github.com/frctl/fractal/tree/main/packages/nunjucks) you would instead use Nunjuck's `include` tag to include sub components. For example:
 
 ```html
 <!-- parent.nunj -->
@@ -73,7 +73,7 @@ Let's look at how each of these might work in turn.
 
 ### A) Using the `render` helper
 
-Both the default [Handlebars template engine](../core-concepts/view-templates.html#template-rendering) and the [Nunjucks engine](https://github.com/frctl/fractal/tree/master/packages/nunjucks#helpers) come with a `render` helper to use in your templates, instead of the standard partial/include syntax.
+Both the default [Handlebars template engine](../core-concepts/view-templates.html#template-rendering) and the [Nunjucks engine](https://github.com/frctl/fractal/tree/main/packages/nunjucks#helpers) come with a `render` helper to use in your templates, instead of the standard partial/include syntax.
 
 Unlike the standard 'include' syntax, the `render` helper renders a sub-component in-place, using its own context data (unless overridden by data passed into it). This is a good solution if you want to **render a sub-component with its own context data**, AND you don't mind using a custom helper function to handle the rendering.
 
@@ -114,7 +114,7 @@ context:
 You can see in this case, we don't need to specify any context data for the `button` sub-component in the `search-box.config.yml` - instead the `{{ render }}` helper will automatically render the `button` using the context data defined in its own `button.config.yml`.
 :::
 
-You can also override all or a just a sub-set of the sub-component's default context data - see the [Handlebars helpers](../core-concepts/view-templates.html#handlebars-helpers) or the [Nunjucks helpers](https://github.com/frctl/fractal/tree/master/packages/nunjucks) documentation for more info.
+You can also override all or a just a sub-set of the sub-component's default context data - see the [Handlebars helpers](../core-concepts/view-templates.html#handlebars-helpers) or the [Nunjucks helpers](https://github.com/frctl/fractal/tree/main/packages/nunjucks) documentation for more info.
 
 ### B) Define all context data in the parent component's config
 
