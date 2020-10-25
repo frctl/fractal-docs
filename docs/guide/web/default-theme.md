@@ -48,6 +48,27 @@ Mandelbrot offers a pre-defined set of colour 'skins' that you can apply to the 
 * **Choices:** `aqua` | `black` | `blue` | `default` | `fuchsia` | `green` | `grey` | `lime` | `maroon` | `navy` | `olive` | `orange` | `purple` | `red` | `teal` | `white` | `yellow`
 * **Default:** `default` (blue)
 
+#### Specifying custom colors <Badge text="added in v1.5.0" type="tip"/>
+The `skin` option can also be specified as an object in order to customize the chosen skin with custom colors.
+
+```js
+{
+    skin: {
+        name: 'default',
+        accent: '#f2d',
+        complement: '#402',
+        links: '#a06',
+    }
+}
+```
+::: tip
+Only hex colors are supported.
+:::
+
+::: warning
+Custom colors **are not used** in [browsers that do not support CSS variables](https://caniuse.com/css-variables). In those browsers, users see the skin specified in `skin.name`.
+:::
+
 ### format
 
 The format to use when outputting context data.
