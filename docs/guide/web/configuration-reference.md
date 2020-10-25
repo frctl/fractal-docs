@@ -104,13 +104,13 @@ fractal.web.set('static.mount', 'project-assets');
 
 Override and/or extend the default [highlight.js](https://github.com/highlightjs/highlight.js/) syntax highlighter.
 
-For example, adding svelte language support to highlight.js:
+For example, adding Svelte language support to highlight.js:
 ```js
 const hljs = require('highlight.js');
-const hljs_svelte = require('highlightjs-svelte');
+const hljsSvelte = require('highlightjs-svelte');
 const _ = require('lodash');
 
-hljs_svelte(hljs);
+hljsSvelte(hljs);
 
 fractal.web.set('highlighter', function (content, lang) {
     content = _.toString(content || '');
