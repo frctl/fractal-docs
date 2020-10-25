@@ -13,25 +13,25 @@ Fractal helps you assemble, preview and document website component libraries, an
 Fractal can be run from the command line or integrated into your project via its API.
 
 <div style="margin-bottom: 15px;">
-  <!-- Build -->
-  <a href="https://travis-ci.org/frctl/fractal" title="Continuous integration" style="margin-right: 8px">
-    <img src="https://img.shields.io/travis/frctl/fractal.svg?style=flat-square" alt="">
+  <!-- Github Actions -->
+  <a href="https://github.com/frctl/fractal/actions" title="Build status">
+    <img src="https://img.shields.io/github/workflow/status/frctl/fractal/test/main" alt="">
   </a>
   <!-- NPM Version -->
-  <a href="https://www.npmjs.com/package/@frctl/fractal" title="Current version" style="margin-right: 8px">
-    <img src="https://img.shields.io/npm/v/@frctl/fractal.svg?style=flat-square" alt="">
-  </a>
-  <!-- NPM Downloads -->
-  <a href="https://www.npmjs.com/package/@frctl/fractal" title="NPM monthly downloads" style="margin-right: 8px">
-    <img src="https://img.shields.io/npm/dm/@frctl/fractal.svg?style=flat-square" alt="">
+  <a href="https://www.npmjs.com/package/@frctl/fractal" title="Current version">
+    <img src="https://img.shields.io/npm/v/@frctl/fractal.svg" alt="">
   </a>
   <!-- Discord -->
-  <a href="https://www.npmjs.com/package/@frctl/fractal" title="Chat with us on Discord" style="margin-right: 8px">
-    <img src="https://img.shields.io/badge/discord-join-7289DA.svg?style=flat-square" alt="">
+  <a href="https://discord.gg/vuRz4Yx" title="Chat with us on Discord">
+    <img src="https://img.shields.io/badge/discord-join-7289DA" alt="">
+  </a>
+  <!-- NPM Downloads -->
+  <a href="https://www.npmjs.com/package/@frctl/fractal" title="NPM monthly downloads">
+    <img src="https://img.shields.io/npm/dm/@frctl/fractal" alt="">
   </a>
   <!-- License -->
-  <a href="https://github.com/frctl/fractal/blob/main/LICENSE" title="MIT license" style="margin-right: 8px">
-    <img alt="GitHub" src="https://img.shields.io/github/license/frctl/fractal.svg?style=flat-square">
+  <a href="https://github.com/frctl/fractal/blob/main/LICENSE" title="MIT license">
+    <img alt="GitHub" src="https://img.shields.io/github/license/frctl/fractal">
   </a>
   <!-- Github -->
   <a href="http://github.com/frctl/fractal">
