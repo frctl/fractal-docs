@@ -61,12 +61,12 @@ The `skin` option can also be specified as an object in order to customize the c
     }
 }
 ```
-::: tip
+::: tip NOTICE
 Only hex colors are supported.
 :::
 
 ::: warning
-Custom colors **are not used** in [browsers that do not support CSS variables](https://caniuse.com/css-variables). In those browsers, users see the skin specified in `skin.name`.
+Custom colors **are not applied** in [browsers that do not support CSS variables](https://caniuse.com/css-variables). In those browsers, users see the bare skin specified in `skin.name`.
 :::
 
 ### format
