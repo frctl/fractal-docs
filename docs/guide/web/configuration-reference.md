@@ -100,4 +100,27 @@ fractal.web.set('static.mount', 'project-assets');
 // public/bar/foo.css will be served at http://localhost:3000/project-assets/bar/foo.css
 ```
 
+### highlighter <Badge text="added in v1.4.0" type="tip"/>
+
+Override and/or extend the default [highlight.js](https://github.com/highlightjs/highlight.js/) syntax highlighter.
+
+For example, adding svelte language support to highlight.js:
+```js
+const hljs = require('highlight.js');
+const hljs_svelte = require('highlightjs-svelte');
+const _ = require('lodash');
+
+hljs_svelte(hljs);
+
+fractal.web.set('highlighter', function (content, lang) {
+    content = _.toString(content || '');
+    lang = lang ? lang.toLowerCase() : lang;
+    try {
+        return lang ? hljs.highlight(lang, content).value : hljs.highlightAuto(content).value;
+    } catch (e) {
+        return hljs.highlightAuto(content).value;
+    }
+});
+```
+
 <!-- ### assets.mount -->
