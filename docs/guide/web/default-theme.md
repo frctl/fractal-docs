@@ -260,6 +260,41 @@ Customize labels used in the templates, useful for translating the interface for
         tree: {
             collapse: 'Collapse tree',
         },
+        components: {
+            handle: 'Handle',
+            tags: 'Tags',
+            variants: 'Variants',
+            context: {
+                empty: 'No context defined.',
+            },
+            notes: {
+                empty: 'No notes defined.',
+            },
+            preview: {
+                label: 'Preview',
+                withLayout: 'With layout',
+                componentOnly: 'Component only',
+            },
+            path: 'Filesystem Path',
+            references: 'References',
+            referenced: 'Referenced by',
+            resources: {
+                file: 'File',
+                content: 'Content',
+                previewUnavailable: 'Previews are currently not available for this file type.',
+                url: 'URL',
+                path: 'Filesystem Path',
+                size: 'Size',
+            },
+        },
+        panels: {
+            html: 'HTML',
+            view: 'View',
+            context: 'Context',
+            resources: 'Resources',
+            info: 'Info',
+            notes: 'Notes',
+        },
     }
     ```
 
