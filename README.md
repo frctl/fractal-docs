@@ -8,8 +8,8 @@ Built using [VuePress](https://vuepress.vuejs.org/).
 
 1. Download or clone this repo
 2. Install dependencies: `npm ci`
-3. Start the development server: `npm run docs:dev`
-4. (optional) Build static files `npm run docs:build`
+3. Start the development server: `npm start`
+4. (optional) Build static files `npm run build`
 
 ## Deployment
 http://fractal.build is hosted using [Netlify](https://www.netlify.com/). Deployment is triggered by pushing to the `master` branch
@@ -17,7 +17,7 @@ http://fractal.build is hosted using [Netlify](https://www.netlify.com/). Deploy
 This will essentially do the following:
 
 ```
-npm run docs:build
+npm run build
 cd docs/.vuepress/dist
 ```
 
