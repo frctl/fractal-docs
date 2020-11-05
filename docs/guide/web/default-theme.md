@@ -298,6 +298,44 @@ Customize labels used in the templates, useful for translating the interface for
     }
     ```
 
+### information <Badge text="added in v1.6.0" type="tip"/>
+
+Define the content of the navigation’s “information” block (see [nav](#nav) option above). This can be used to display a build date or the library version for example.
+
+```js
+{
+    information: [
+        {
+            label: 'Version',
+            value: require('./package.json').version,
+        },
+        {
+            label: 'Built on',
+            value: new Date(),
+            type: 'time', // Outputs a <time /> HTML tag
+            format: (value) => {
+                return value.toLocaleDateString('en');
+            }
+        }
+    ],
+}
+```
+
+* **Default:**
+
+    ```js
+    [
+        {
+            label: config.labels.builtOn, // See "labels" section above
+            value: new Date(),
+            type: 'time',
+            format: (value) => {
+                return value.toLocaleDateString(config.lang);
+            },
+        },
+    ]
+    ```
+
 ## Template customisation
 
 Mandelbrot (as with all themes) uses [Nunjucks](http://mozilla.github.io/nunjucks/) templates to generate its HTML. The source code for these templates can be seen in the `views` directory of the [Mandelbrot repository](https://github.com/frctl/fractal/tree/main/packages/mandelbrot/views).
