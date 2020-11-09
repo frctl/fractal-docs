@@ -12,7 +12,6 @@ features:
   details: Seamlessly integrate your component library into your site, app or build tools by including it as a dependency in your build.
 - title: Data-driven
   details: Component preview data can be hardcoded or dynamically generated any way you like - for instance using libraries such as Faker.
-footer: MIT Licensed | A Community Driven Project
 ---
 
 <h2 class="feature__title">Fractal in the wild</h2>
@@ -53,23 +52,28 @@ footer: MIT Licensed | A Community Driven Project
 
   <div class="m-supporters__grid">
     <div class="m-supporters__item" style="min-width: 70px;">
-      <a target="_blank" href="https://slab.com/">
+      <a target="_blank" href="https://slab.com/" title="Slab">
         <img :src="$withBase('/slab-logo.png')" style="max-width: 70px;">
       </a>
     </div>
     <div class="m-supporters__item" style="min-width: 90px;">
-      <a target="_blank" href="https://clearleft.com/">
+      <a target="_blank" href="https://clearleft.com/" title="Clearleft">
         <img :src="$withBase('/clearleft-logo.png')" style="max-width: 90px;">
       </a>
     </div>
     <div class="m-supporters__item" style="min-width: 65px;">
-      <a target="_blank" href="https://madebykind.com/">
+      <a target="_blank" href="https://madebykind.com/" title="Kind">
         <img :src="$withBase('/kind-logo.png')" style="max-width: 65px;">
       </a>
     </div>
     <div class="m-supporters__item" style="min-width: 70px;">
-      <a target="_blank" href="https://www.liip.ch/">
+      <a target="_blank" href="https://www.liip.ch/" title="Liip">
         <img :src="$withBase('/liip-logo.png')" style="max-width: 70px;">
+      </a>
+    </div>
+    <div class="m-supporters__item" style="min-width: 70px;">
+      <a target="_blank" href="https://www.netlify.com" title="Netlify">
+        <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify" style="max-width: 70px"/>
       </a>
     </div>
   </div>
@@ -77,3 +81,8 @@ footer: MIT Licensed | A Community Driven Project
   <p class="m-supporters__all">and all our community maintainers</p>
 </div>
 
+<footer class="footer">
+  <a href="https://github.com/frctl/fractal/blob/main/LICENSE">Distributed under the MIT license</a>
+  |
+  <a href="https://github.com/frctl/fractal/blob/main/.github/CODE_OF_CONDUCT.md">Code of Conduct</a>
+</footer>
