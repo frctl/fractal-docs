@@ -12,7 +12,6 @@ features:
   details: Seamlessly integrate your component library into your site, app or build tools by including it as a dependency in your build.
 - title: Data-driven
   details: Component preview data can be hardcoded or dynamically generated any way you like - for instance using libraries such as Faker.
-footer: MIT Licensed | A Community Driven Project
 ---
 
 <h2 class="feature__title">Fractal in the wild</h2>
@@ -77,3 +76,8 @@ footer: MIT Licensed | A Community Driven Project
   <p class="m-supporters__all">and all our community maintainers</p>
 </div>
 
+<footer class="footer">
+  <a href="https://github.com/frctl/fractal/blob/main/LICENSE">Distributed under the MIT license</a>
+  |
+  <a href="https://github.com/frctl/fractal/blob/main/.github/CODE_OF_CONDUCT.md">Code of Conduct</a>
+</footer>
