@@ -52,23 +52,28 @@ features:
 
   <div class="m-supporters__grid">
     <div class="m-supporters__item" style="min-width: 70px;">
-      <a target="_blank" href="https://slab.com/">
+      <a target="_blank" href="https://slab.com/" title="Slab">
         <img :src="$withBase('/slab-logo.png')" style="max-width: 70px;">
       </a>
     </div>
     <div class="m-supporters__item" style="min-width: 90px;">
-      <a target="_blank" href="https://clearleft.com/">
+      <a target="_blank" href="https://clearleft.com/" title="Clearleft">
         <img :src="$withBase('/clearleft-logo.png')" style="max-width: 90px;">
       </a>
     </div>
     <div class="m-supporters__item" style="min-width: 65px;">
-      <a target="_blank" href="https://madebykind.com/">
+      <a target="_blank" href="https://madebykind.com/" title="Kind">
         <img :src="$withBase('/kind-logo.png')" style="max-width: 65px;">
       </a>
     </div>
     <div class="m-supporters__item" style="min-width: 70px;">
-      <a target="_blank" href="https://www.liip.ch/">
+      <a target="_blank" href="https://www.liip.ch/" title="Liip">
         <img :src="$withBase('/liip-logo.png')" style="max-width: 70px;">
+      </a>
+    </div>
+    <div class="m-supporters__item" style="min-width: 70px;">
+      <a target="_blank" href="https://www.netlify.com" title="Netlify">
+        <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify" style="max-width: 70px"/>
       </a>
     </div>
   </div>
