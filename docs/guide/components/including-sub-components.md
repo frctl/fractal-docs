@@ -251,14 +251,11 @@ variants:
 
 ```twig
 <!-- menu-local-tasks.twig -->
-{% if primary %}
-  <h2 class="visually-hidden">{{ 'Primary tabs'|t }}</h2>
-  <ul>{{ primary }}</ul>
-{% endif %}
-{% if secondary %}
-  <h2 class="visually-hidden">{{ 'Secondary tabs'|t }}</h2>
-  <ul>{{ secondary }}</ul>
-{% endif %}
+<ul>
+  {% for tab in primary %}
+    {{ tab }}
+  {% endfor %}
+</ul>
 ```
 
 ```yaml
