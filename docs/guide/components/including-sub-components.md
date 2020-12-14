@@ -225,3 +225,43 @@ In this case, when rendered the components will look like:
 You can see that in the `@search-box` component the button text is now the same as the text defined in the `button.config.yml` file.
 
 See the documentation on [referencing other component\'s data](../core-concepts/context-data.html#data-references) for more information on using this technique.
+
+### Fully rendering a sub-component <Badge text="added in v1.3.0" type="tip"/>
+
+If you're creating templates for a rendering system that uses bottom-up rendering, you may need to replace a variable with the complete markup from a sub-component.
+You can reference a component in your context and prefix it with `@@` to do this.
+
+For example, if you wanted to write templates for Drupal's local menu tasks -
+
+```twig
+<!-- menu-local-task.twig -->
+<li{{ attributes }}>{{ link }}</li>
+```
+
+```yaml
+# menu-local-task.config.yml
+context:
+  attributes:
+
+variants:
+  - name: active
+    context:
+      attributes: "class=\"is-active\""
+```
+
+```twig
+<!-- menu-local-tasks.twig -->
+<ul>
+  {% for tab in primary %}
+    {{ tab }}
+  {% endfor %}
+</ul>
+```
+
+```yaml
+# menu-local-tasks.config.yml
+context:
+  primary:
+    - @@menu-local-task
+    - @@menu-local-task--active
+```
