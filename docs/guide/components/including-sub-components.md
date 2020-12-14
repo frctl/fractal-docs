@@ -226,7 +226,7 @@ You can see that in the `@search-box` component the button text is now the same 
 
 See the documentation on [referencing other component\'s data](../core-concepts/context-data.html#data-references) for more information on using this technique.
 
-### Fully rendering a sub-component
+### Fully rendering a sub-component <Badge text="added in v1.3.0" type="tip"/>
 
 If you're creating templates for a rendering system that uses bottom-up rendering, you may need to replace a variable with the complete markup from a sub-component.
 You can reference a component in your context and prefix it with `@@` to do this.
