@@ -28,9 +28,9 @@ The label is typically displayed in any UI navigation items that refer to the co
 label: 'Website Layouts'
 ```
 
-An integer order value, used when sorting collections. Overrides any order value set as a property of the directory name if set.
-
 #### order
+
+An integer order value, used when sorting collections. Overrides any order value set as a property of the directory name if set.
 
 ```yaml
 order: 4
