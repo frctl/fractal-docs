@@ -20,7 +20,7 @@ module.exports = {
       { text: 'Guide', link: '/guide/' },
       { text: 'API', link: '/api/' },
       { text: 'Chat', link: 'https://discord.gg/vuRz4Yx' },
-      { text: 'Demo', link: 'https://fractal-demo.netlify.app/' },
+      { text: 'Demo', link: 'https://demo.fractal.build/' },
       { text: 'Github', link: 'https://github.com/frctl/fractal' }
     ],
     sidebar: {
