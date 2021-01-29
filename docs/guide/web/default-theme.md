@@ -6,7 +6,7 @@ title: Default theme
 
 [Mandelbrot](https://github.com/frctl/fractal/tree/main/packages/mandelbrot) is the name of the default web UI theme that ships with Fractal. A standard installation will look something like this:
 
-<a href="https://fractal-demo.netlify.app/" target="_blank">
+<a href="https://demo.fractal.build/" target="_blank">
     <picture>
         <source :srcset="$withBase('/screenshot-demo-cl-large.png')" media="(min-width: 900px)">
         <source :srcset="$withBase('/screenshot-demo-cl-medium.png')" media="(min-width: 700px)">
