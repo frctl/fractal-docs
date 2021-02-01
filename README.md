@@ -12,7 +12,7 @@ Built using [VuePress](https://vuepress.vuejs.org/).
 4. (optional) Build static files `npm run build`
 
 ## Deployment
-http://fractal.build is hosted using [Netlify](https://www.netlify.com/). Deployment is triggered by pushing to the `master` branch
+http://fractal.build is hosted using [Netlify](https://www.netlify.com/). Deployment is triggered by pushing to the `main` branch
 
 This will essentially do the following:
 
