@@ -6,6 +6,7 @@ module.exports = {
     ['link', { rel: 'icon', href: '/favicon.png' }]
   ],
   themeConfig: {
+    docsBranch: 'main',
     docsDir: 'docs',
     lastUpdated: 'Last Updated', // string | boolean
     repo: 'frctl/fractal-docs',
