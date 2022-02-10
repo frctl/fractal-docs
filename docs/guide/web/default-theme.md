@@ -102,7 +102,7 @@ The nav sections that should show up in the sidebar (and in which order):
   * `information` <Badge text="added in v1.3.0" type="tip" vertical="middle"/>
 * **Default:** `['search', 'components', 'docs', 'information']`
 
-### navigation <Badge text="added in v1.5.13" type="tip"/>
+### navigation <Badge text="added in v1.10" type="tip"/>
 
 Determine whether to use a single-column sidebar (variants appear directly beneath their main component) or a two-column sidebar (variants appear in a second column, after the main component has been selected in the first column).
 
